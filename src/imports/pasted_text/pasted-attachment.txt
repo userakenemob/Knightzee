@@ -1,0 +1,815 @@
+
+Design a large-scale, multipage corporate website for a renewable energy EPC company in Kenya called Knights Energy.
+
+This is a high-end engineering + solar + electrical contracting company website serving Kenya, Uganda, and Tanzania.
+
+The site must feel like a top-tier EPC + infrastructure company, similar to global solar engineering firms.
+
+🎨 GLOBAL DESIGN SYSTEM
+Style: Premium industrial + clean energy corporate
+Tone: Engineering-first, trustworthy, high authority
+Colors:
+Primary green: #36AC43
+Dark navy for headers
+White background base
+Soft gray sections
+Typography: Inter / Poppins (strong hierarchy)
+Layout: Grid-based, structured, enterprise-level spacing
+Imagery:
+Real solar installations (Kenya/East Africa)
+Engineers on-site
+Industrial solar farms
+Electrical engineering environments
+Avoid:
+cartoon icons
+generic eco illustrations
+overly decorative UI
+🧭 HEADER DESIGN (GLOBAL SITE HEADER)
+
+Top utility bar:
+
+Left → Right:
+
+📧 Email icon (#36AC43) + info@knightsndapps.com
+
+🕒 Hours icon (#36AC43) + Mon–Fri: 8 am – 5 pm
+📍 Location icon + Get Direction → links to:
+“Well Mall, Karen, Nairobi, Kenya” (Google Maps)
+
+Social icons (right):
+
+X (Twitter)
+Facebook
+LinkedIn
+
+Language flags:
+🇰🇪 Kenya | 🇺🇬 Uganda | 🇹🇿 Tanzania
+
+MAIN NAVIGATION (SECOND ROW HEADER)
+
+Left: LOGO
+
+Center navigation:
+
+Home
+About Us (MEGA MENU)
+Services (MEGA MENU)
+Projects
+Media
+Shop
+Contact Us
+
+Right side:
+
++254 788220607
+Cart icon
+Checkout icon
+
+THese should be header:
+1) Home
+2) About us --should have these subpages  ```About Us
+
+Our Competitive
+Advantage
+
+Leadership Team
+
+Awards & Recognition
+
+Help & FAQs
+
+Company Manuals
+
+Careers```
+
+3) Services ```
+
+Residential Solar
+
+Solutions
+
+Commercial & Industrial
+
+Solar Solutions
+
+Mini-grids & Off-grid
+Solar Projects
+
+Electric Mobility
+
+Solar Water Heating
+
+Systems
+
+Solar Water Pumping
+Systems
+
+Operation and
+Maintenance
+
+Power Plant Testing and
+```
+Projects 
+
+Media 
+```
+
+Blog
+
+Gallery
+```
+Shop
+Contact Us
+
+This is a multipage site
+The following are site contents:
+
+The Header secion should start 
+with email icon color 36ac43 then info@knightsndapps.com, then time icon same color 
+Hours: Mon-Fri: 8 am – 5 pm on right then location icon on right and Get Direction which when clicked should takesomeone to the Well Mall Karen Nairobi Kenya, then right icons for X, fb and linkedin which when clicked redirects to respective sites. Then on right icon for flags of Kenya, then Uganda then Tanzania then below this then come real navigations for pages in this order:
+logo, ---these have a megamenu--- Home
+About us 
+Services 
+Projects
+Media 
+Shop
+Contact Us
++254 788220607, then the carts and an icon for check out
+
+These are the contents:
+
+Homepage:
+
+Complete Commercial, Residential & Industrial Solar Systems
+Home of Renewable
+Energy and Electrical
+Contracting!
+All our energy is generated from renewable sources. We will help you to
+reduce your energy consumption.
+More About Us
+Our services
+KNIGTHS ENERGY - IMAGE 2-1
+Fostering Growth
+of Solar Energy!
+We are committed to providing alternative solutions of the highest standards and address the energy cost factor.
+WELCOME TO KNIGHTS ENERGY
+Sustainable, Reliable & Affordable Energy!
+Knights Energy provides solar solutions for industrial, commercial & residential applications, that enable individuals & organizations to be part of a sustainable green energy powered world.
+The Company has the capacity to realize projects of variable complexity and provide the expertise to fully supply and install simple to complex on-grid and off-grid photovoltaic power plants with verifiable experience in the task at hand.
+
+The easy, affordable way to install solar systems in your Home and Business.
+Over the years, the Company has become one of the biggest installers and maintenance partners for medium and large-scale solar installations in the region with a considerable number of solutions for domestic and Industrial projects. We are also the leading clean mobility consultants in East Africa, specializing in eMobility.
+
+
+Watch Our Intro!
+Improving The Performance Of Solar Energy.
+Energize Society With Sustainable And Reliable Energy Systems!
+Our expertise covers Energy generation, energy management and electric mobility which leads to generation, consumption monitoring and reporting on energy usage and efficiency. Our Reference Projects are testament to our success in delivering world-class solar power plants to leading investors in the PV sector. We work to provide options that meet the specific customer needs and are consistent with ensuring Environmental Sustainability
+
+Explore All Features!
+1
+2
+3
+We drive the transition to more sustainable, reliable & affordable energy systems, Find Your Solution 
+99.9% Customer Satisfaction based on 750+ reviews and 6,154 Completed Projects.
+Knights Energy 1241x849 4
+At Knights Energy Ltd, you will get a wide variety of solutions in today's Information technology and Power Solutions Industry.
+
+Feasibility Studies for Commercial & Industrial Clients
+Solar Installation & Construction
+Operation & Maintenance
+Training & Capacity Building
+Latest Projects
+
+Solar, Projects
+Missionary Benedictine Karen
+
+Solar, Projects
+Standard Chartered Bank HQ
+
+Solar, Projects
+Megapack
+
+Solar, Projects
+IBER Africa
+
+Solar, Projects
+Daughters of Charity
+
+Solar, Projects
+BAT Thika
+Explore All Projects
+The Eco-Hub Concept
+Revolutionizing Transport and Achieving Energy Security
+We are proud to be pioneering the ECOHUB CONCEPT. A development of an integrated electro mobility ecosystem powered by solar implemented across various transport models resulting in a magnitude of energy and cost saving as well as environmental benefits.
+
+All Projects
+
+Cost Reduction
+
+Most energy consumers have aggressive cost reduction initiatives as well as sustainable goals for their utility budgets-
+
+Read More
+
+Un-parallel Expertise
+
+Our expertise covers Energy generation, Energy Management & Electric Mobility which leads to generation
+
+Read More
+
+Climate Advantage
+
+Due to greater financial pressures on manufacturers and climate changes goals, reducing the
+
+Read More
+Untitled design(1)
+Technical Expertise
+
+Our experts begin by reviewing energy and fuel consumptions to identify cost savings and target processing areas
+
+Read More
+Open power for a brighter future. We empower sustainable progress.
+317
+Number Of Projects In Operations Across East Africa
+Yet those that embrace change are thriving, building bigger, better, faster, and stronger products than ever.
+Download Brochures
+Pricing and Plans
+Request Quote
+12
+Years Of Experience On Renewable Energy
+We embrace change and are thriving, building better, long lasting and more reliable solar solutions.
+Our Leadership Team
+Awards & Recognition
+Join Our Team
+KNIGTHS ENERGY - EAST AFRICA MAP 5
+
+
+
+
+
+
+Design & Shipping
+We strive to produce unique designs, give the best solutions that match your needs and select the appropriate equipment at the appropriate moment.
+Schedule A Visit
+Contract & Install
+If you choose self-installation, our organization will provide you with competitive and adaptable contracts to fit your management requirements.
+Request A Quote
+Discover independence through the power of solar,  
+Explore Our Plans
+News & Announcements
+Recent Articles
+Save Money, Save The Environment!
+Let’s Build a Greener Eco-friendly Environment
+Our Solar business now provides the preferred channel to market for some of the world’s leading PV manufacturers and our solar professionals work jointly with partners on enhancing product features, lowering lead times and improving cash flow.
+
+
+Solar
+Installation
+
+
+Feasibility
+Studies
+
+Operation and Maintenance
+
+Construction monitoring and Charging
+
+Request A Quote
+Name
+
+Email
+
+Phone
+
+Address
+
+System Data
+
+
+System Installer?
+
+
+Project completed by?
+
+Monthly electric usage in kWh?
+
+
+Solar system type?
+
+
+Solar panels place?
+
+
+Materials on your roof?
+
+Preferred Contact Method
+
+All
+Email
+Phone
+
+
+Submit Request
+
+Here we have logos for partners of previous works 
+Molo Rivers Roses
+Missionary Benedictines sisters
+MEGA PACK
+KLM AIR FRANCE
+KICC
+
+
+
+Footer should have these:
+
+Email: info@knightsandapps.com
+Hours: Mon-Fri: 8 am – 5 pm
+Get Directions
+Type Your Search Words...
+
+Kenya
+Uganda
+Tanzania
+Knights Energy
+Home
+About us 
+Services 
+Projects
+Media 
+Shop
+Contact Us
++254 788220607
+0
+
+Complete Commercial, Residential & Industrial Solar Systems
+Home of Renewable
+Energy and Electrical
+Contracting!
+All our energy is generated from renewable sources. We will help you to
+reduce your energy consumption.
+More About Us
+Our services
+KNIGTHS ENERGY - IMAGE 2-1
+Fostering Growth
+of Solar Energy!
+We are committed to providing alternative solutions of the highest standards and address the energy cost factor.
+WELCOME TO KNIGHTS ENERGY
+Sustainable, Reliable & Affordable Energy!
+Knights Energy provides solar solutions for industrial, commercial & residential applications, that enable individuals & organizations to be part of a sustainable green energy powered world.
+The Company has the capacity to realize projects of variable complexity and provide the expertise to fully supply and install simple to complex on-grid and off-grid photovoltaic power plants with verifiable experience in the task at hand.
+
+The easy, affordable way to install solar systems in your Home and Business.
+Over the years, the Company has become one of the biggest installers and maintenance partners for medium and large-scale solar installations in the region with a considerable number of solutions for domestic and Industrial projects. We are also the leading clean mobility consultants in East Africa, specializing in eMobility.
+
+
+Watch Our Intro!
+Improving The Performance Of Solar Energy.
+Energize Society With Sustainable And Reliable Energy Systems!
+Our expertise covers Energy generation, energy management and electric mobility which leads to generation, consumption monitoring and reporting on energy usage and efficiency. Our Reference Projects are testament to our success in delivering world-class solar power plants to leading investors in the PV sector. We work to provide options that meet the specific customer needs and are consistent with ensuring Environmental Sustainability
+
+Explore All Features!
+1
+2
+3
+We drive the transition to more sustainable, reliable & affordable energy systems, Find Your Solution 
+99.9% Customer Satisfaction based on 750+ reviews and 6,154 Completed Projects.
+Knights Energy 1241x849 4
+At Knights Energy Ltd, you will get a wide variety of solutions in today's Information technology and Power Solutions Industry.
+
+Feasibility Studies for Commercial & Industrial Clients
+Solar Installation & Construction
+Operation & Maintenance
+Training & Capacity Building
+Latest Projects
+
+Solar, Projects
+Missionary Benedictine Karen
+
+Solar, Projects
+Standard Chartered Bank HQ
+
+Solar, Projects
+Megapack
+
+Solar, Projects
+IBER Africa
+
+Solar, Projects
+Daughters of Charity
+
+Solar, Projects
+BAT Thika
+Explore All Projects
+The Eco-Hub Concept
+Revolutionizing Transport and Achieving Energy Security
+We are proud to be pioneering the ECOHUB CONCEPT. A development of an integrated electro mobility ecosystem powered by solar implemented across various transport models resulting in a magnitude of energy and cost saving as well as environmental benefits.
+
+All Projects
+
+Cost Reduction
+
+Most energy consumers have aggressive cost reduction initiatives as well as sustainable goals for their utility budgets-
+
+Read More
+
+Un-parallel Expertise
+
+Our expertise covers Energy generation, Energy Management & Electric Mobility which leads to generation
+
+Read More
+
+Climate Advantage
+
+Due to greater financial pressures on manufacturers and climate changes goals, reducing the
+
+Read More
+Untitled design(1)
+Technical Expertise
+
+Our experts begin by reviewing energy and fuel consumptions to identify cost savings and target processing areas
+
+Read More
+Open power for a brighter future. We empower sustainable progress.
+317
+Number Of Projects In Operations Across East Africa
+Yet those that embrace change are thriving, building bigger, better, faster, and stronger products than ever.
+Download Brochures
+Pricing and Plans
+Request Quote
+12
+Years Of Experience On Renewable Energy
+We embrace change and are thriving, building better, long lasting and more reliable solar solutions.
+Our Leadership Team
+Awards & Recognition
+Join Our Team
+KNIGTHS ENERGY - EAST AFRICA MAP 5
+
+
+
+
+
+
+Design & Shipping
+We strive to produce unique designs, give the best solutions that match your needs and select the appropriate equipment at the appropriate moment.
+Schedule A Visit
+Contract & Install
+If you choose self-installation, our organization will provide you with competitive and adaptable contracts to fit your management requirements.
+Request A Quote
+Discover independence through the power of solar,  
+Explore Our Plans
+News & Announcements
+Recent Articles
+Save Money, Save The Environment!
+Let’s Build a Greener Eco-friendly Environment
+Our Solar business now provides the preferred channel to market for some of the world’s leading PV manufacturers and our solar professionals work jointly with partners on enhancing product features, lowering lead times and improving cash flow.
+
+
+
+
+Solar
+Installation
+
+
+Feasibility
+Studies
+
+Operation and Maintenance
+
+Construction monitoring and Charging
+
+Request A Quote
+Name
+
+Email
+
+Phone
+
+Address
+
+System Data
+
+
+System Installer?
+
+
+Project completed by?
+
+Monthly electric usage in kWh?
+
+
+Solar system type?
+
+
+Solar panels place?
+
+
+Materials on your roof?
+
+Preferred Contact Method
+
+All
+Email
+Phone
+
+
+Submit Request
+
+Services Page:
+Fostering the Growth of Solar Energy Market
+A Leading Supplier Of Solar Materials For Manufacturers, Installers & Contractors.
+
+Residential Solar Solutions
+Our Eco Smart Home System ensures that the solar power you produce is used in the best possible way. Besides offering great...
+Read More
+
+Commercial & Industrial Solar Solutions
+We offer a complete commercial and industrial
+Read More
+
+Electric Mobility
+Our current transport sector has to break away from energy- and carbon-intensive development paths that have resulted in higher energy costs, higher...
+Read More
+
+Mini-grids & Off-grid Solar Projects
+Looking for ways to Save Energy costs? Looking to invest in an Energy System for your own consumption.
+Read More
+
+Solar Water Pumping Systems
+Our Solar Water Pumping System/Waterbox is specially designed for water supply
+Read More
+
+Operation and Maintenance
+Knights Energy carry out regular maintenance / inspection of the entire PV
+Read More
+
+Solar Water Heating Systems
+Hot water accounts for a big percentage of the energy. Solar Water heaters are a very effective method of using natural energy...
+Read More
+
+Power Plant Testing and Commissioning
+Knights Energy offers independent third-party End of
+Read More
+
+Surveillance Installation
+We offer a complete commercial and industrial
+Read More
+What our clients have to say!
+Request A Quote
+Name
+
+Email
+
+Phone
+
+Address
+
+System Data
+
+
+System Installer?
+
+
+Project completed by?
+
+Monthly electric usage in kWh?
+
+
+Solar system type?
+
+
+Solar panels place?
+
+
+Materials on your roof?
+
+Preferred Contact Method
+
+All
+Email
+Phone
+
+
+Submit Request
+
+Receive an accurate quote within 3-5 days when you fill out the form on this page. Or, give us a call:  
++254 788220607
+Quick Contacts
+Knights Energy is East Africa’s leading Solar Energy solutions provider.
+
+  +254 788220607 +254 722953976
+ Great Jubilee Centre
+ Sempagala Zone
+ Old Bagamoyo Rd
+
+Get Directions
+Company
+About Us
+Leadership Team
+Awards & Recognition
+Our Projects
+Contact Us
+Get it on Google Play
+Download on the App Store
+Services
+Residential Solar Solutions
+Commercial & Industrial Solar Solutions
+Mini-grids & Off-grid Solar Projects
+Electric Mobility
+Solar Water Heating Systems
+Solar Water Pumping Systems
+Operation and Maintenance
+Power Plant Testing and Commissioning
+Surveillance Installation
+Support
+
+
+Projects
+Our Reference Projects are testament to our success in delivering world-class solar power plants to leading investors in the PV sector.
+All
+E-Mobility
+ICT
+Solar
+
+Solar, Projects
+Missionary Benedictine Karen
+Projects Missionary Benedictine Karen Solar Carport and Ground Mount Solar Plant Details Plant Size: 103kW Location: Karen, Nairobi Priory Commissioning Date: 21/12/2022 Perfect Choice!! “I...
+Explore More
+
+Solar, Projects
+Standard Chartered Bank HQ
+Solar, Projects Standard Chartered Bank Head Office, Nairobi Rooftop Solar PLANT DETAILS Plant Size: 102.00 KWp Location: Nairobi Technical Specifications PV inverter: 4x Sunny TriPower...
+Explore More
+
+Solar, Projects
+Megapack
+Solar, Projects Megapack Rooftop Solar PLANT DETAILS Plant Size: 313.34kW Location: Nakuru How It Works, Step One: We Design & Ship. We strive to produce...
+Explore More
+
+Solar, Projects
+IBER Africa
+Projects IBER Africa Rooftop Solar PLANT DETAILS Plant Size: 575kW Location: Nairobi Perfect Choice!! “Knights Energy's dedication to sustainability and environmental consciousness was evident throughout...
+Explore More
+
+Solar, Projects
+Daughters of Charity
+Solar, Projects Daughters of Charity Rooftop Solar PLANT DETAILS Plant Size: Location: How It Works, Step One: We Design & Ship. We strive to produce...
+Explore More
+
+Solar, Projects
+BAT Thika
+Projects BAT Thika and Likoni Commissioning Date: PLANT DETAILS Plant Size: Location: Thika and Likoni Technical Specifications PV inverter: 4x Sunny TriPower STP 25000TL-30 Communication:...
+Explore More
+
+Solar, Projects
+ELLYS
+Projects ELLY'S PHARMACEUTICALS Rooftop Solar PLANT DETAILS Plant Size: 330.63kW Location: Nairobi Perfect Choice!! “Knights Energy's communication was outstanding throughout the project. They kept us...
+Explore More
+
+Solar, Projects
+Total Gigiri
+Solar, Projects Total Gigiri Commissioning Date: PLANT DETAILS Plant Size: Location: Technical Specifications PV inverter: Communication: How It Works, Step One: We Design & Ship....
+Explore More
+
+E-Mobility, Projects
+Solar EV Chargers Installed
+E-Mobility, Projects Solar EV Chargers Installed Commissioning Date: PLANT DETAILS Plant Size: Location: Technical Specifications PV inverter: Communication: How It Works, Step One: We Design...
+Explore More
+
+ICT, Projects
+CCTV SURVEILLANCE INSTALLATION PROJECT
+ICT, Projects CCTV SURVEILLANCE INSTALLATION PROJECT Commissioning Date: February 2022 Atex CCTV and Motion Sensor installation project was developed in Uganda on February 2022. How...
+Explore More
+
+
+Shop Page
+Our Products
+Home
+Products
+
+Sort by latest
+Showing 1–9 of 39 results
+
+
+FLIR VP50-2
+KSh 1,000.00
+
+L Feets 80mm
+KSh 0.00
+
+Solar 300N
+KSh 3,000.00
+
+Fluke 1735 Power Logger
+KSh 3,000.00
+
+Fluke 1732 Energy Logger
+KSh 3,000.00
+
+Fluke 1730 Energy Logger
+KSh 3,000.00
+
+EVSE Adapter
+KSh 2,000.00
+
+EVA 500 UK AMPROBE
+KSh 2,000.00
+
+EV Charge Check
+KSh 2,000.00
+1
+2
+3
+4
+5
+
+
+Contact Us Page
+Contact Us
+Home
+Contact Us
+KENYA
+Great Jubilee Centre, Nairobi
++254 788 220 607 / +254 722 953 976 info@knightsandapps.com
+UGANDA
+Sempagala Zone, Kisaasi Rd
++256 708 468 276 / +256 781 725 896 info@knightsandapps.com
+TANZANIA
+Old Bagamoyo Rd, Opp Kawe Police Station
++255 747 364 514 info@knightsandapps.com
+Request A Quote
+Drive Electric
+Get In Touch
+We take great pride in everything that we do, complete control over products allows us to ensure our customers receive the best quality service.
+Name
+
+Email
+
+Phone
+
+
+Select Your services
+
+Additional Details!
+
+
+Submit Request
+
+
+
+
+KNIGHTS ENERGY - TWO RIVERS 2
+KNIGHTS ENERGY - GREENSPOON
+wonderfeeds
+SIGMA FEEDS
+Shell
+Quick Contacts
+Knights Energy is East Africa’s leading Solar Energy solutions provider.
+
+  +254 788220607 +254 722953976
+ Great Jubilee Centre
+ Sempagala Zone
+ Old Bagamoyo Rd
+
+Get Directions
+Company
+About Us
+Leadership Team
+Awards & Recognition
+Our Projects
+Contact Us
+Get it on Google Play
+Download on the App Store
+Services
+Residential Solar Solutions
+Commercial & Industrial Solar Solutions
+Mini-grids & Off-grid Solar Projects
+Electric Mobility
+Solar Water Heating Systems
+Solar Water Pumping Systems
+Operation and Maintenance
+Power Plant Testing and Commissioning
+Surveillance Installation
+Support
+Terms & Conditions
+Shipping Policy
+Return Policy
+Delivery Tips
+HSSE Policy
+Drugs & Alcohol Policy
+Data Protection Policy
+Products Catalogue
+Download PDF
+Scan to Download our E-charge App
+qrcode Google
+Terms & Conditions
+Privacy Policy
+Shipping Policy
+Return Policy
+HSSE Policy
+Drugs & Alcohol Policy
+Data Protection Policy
+Sitemap
+© 2026 Knights Energy. All Rights Reserved. Design by Nexora Labs and AI
+
+
+Home page should have these:

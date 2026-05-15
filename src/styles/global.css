@@ -1,0 +1,14 @@
+
+/* Slick Carousel Custom Styles */
+.partners-carousel .slick-slide {
+  padding: 0 10px;
+}
+
+.partners-carousel .slick-track {
+  display: flex !important;
+  align-items: center;
+}
+
+.partners-carousel .slick-list {
+  overflow: hidden;
+}
