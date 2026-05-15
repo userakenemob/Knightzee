@@ -46,11 +46,11 @@ export function Header() {
 						<div className="flex justify-between items-center py-3 text-sm">
 							<div className="flex items-center gap-4 xl:gap-6">
 								<a
-									href="mailto:info@knightsndapps.com"
+									href="mailto:info@knightsandapps.com"
 									className="flex items-center gap-2 hover:opacity-80 transition-opacity">
 									<Mail className="w-4 h-4" style={{ color: "#36AC43" }} />
 									<span className="text-gray-700 hidden lg:inline">
-										info@knightsndapps.com
+										info@knightsandapps.com
 									</span>
 								</a>
 								<div className="hidden lg:flex items-center gap-2">
@@ -112,13 +112,13 @@ export function Header() {
 										/>
 
 										<img
-											src="YOUR_UGANDA_URL"
+											src="https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778846570/uganda_y7d3hx.png"
 											alt="Uganda"
 											className="h-6 w-6 rounded-full bg-white p-0.5 shadow-sm object-contain"
 										/>
 
 										<img
-											src="YOUR_TANZANIA_URL"
+											src="https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778846570/tanzania_ejmexs.png"
 											alt="Tanzania"
 											className="h-6 w-6 rounded-full bg-white p-0.5 shadow-sm object-contain"
 										/>
@@ -139,11 +139,11 @@ export function Header() {
 						<div className="flex justify-between items-center py-6">
 							{/* Logo */}
 							<Link to="/" className="flex items-center group">
-								<div
-									className="text-3xl font-bold tracking-tight transition-all duration-300 group-hover:scale-105"
-									style={{ color: "#36AC43" }}>
-									KNIGHTS ENERGY
-								</div>
+								<img
+									src="https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778835819/KNIGHTS-ENERGY-LOGO_wn9tdh.png"
+									alt="Knights Energy Logo"
+									className="h-14 w-auto transition-all duration-300 hover:scale-105"
+								/>
 							</Link>
 
 							{/* Navigation Menu */}
