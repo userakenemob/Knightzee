@@ -176,32 +176,39 @@ export function Header() {
 										)}
 									</Link>
 									{activeMenu === "about" && (
-										<div className="absolute top-full left-0 mt-4 w-72 bg-white shadow-2xl rounded-2xl py-4 border border-gray-100 animate-in fade-in slide-in-from-top-2 duration-300">
-											<Link
-												to="/about"
-												className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
-												About Us
-											</Link>
-											<Link
-												to="/about#advantage"
-												className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
-												Our Competitive Advantage
-											</Link>
-											<Link
-												to="/about#team"
-												className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
-												Leadership Team
-											</Link>
-											<Link
-												to="/about#awards"
-												className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
-												Awards & Recognition
-											</Link>
-											<Link
-												to="/about#careers"
-												className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
-												Careers
-											</Link>
+										<div className="absolute top-full left-0 pt-4 w-72 z-50">
+											<div className="bg-white shadow-2xl rounded-2xl py-4 border border-gray-100 animate-in fade-in slide-in-from-top-2 duration-300">
+												<Link
+													to="/about"
+													onClick={() => setActiveMenu(null)}
+													className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
+													About Us
+												</Link>
+												<Link
+													to="/about#advantage"
+													onClick={() => setActiveMenu(null)}
+													className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
+													Our Competitive Advantage
+												</Link>
+												<Link
+													to="/about#team"
+													onClick={() => setActiveMenu(null)}
+													className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
+													Leadership Team
+												</Link>
+												<Link
+													to="/about#awards"
+													onClick={() => setActiveMenu(null)}
+													className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
+													Awards & Recognition
+												</Link>
+												<Link
+													to="/about#careers"
+													onClick={() => setActiveMenu(null)}
+													className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
+													Careers
+												</Link>
+											</div>
 										</div>
 									)}
 								</div>
@@ -221,37 +228,45 @@ export function Header() {
 										)}
 									</Link>
 									{activeMenu === "services" && (
-										<div className="absolute top-full left-0 mt-4 w-80 bg-white shadow-2xl rounded-2xl py-4 border border-gray-100 animate-in fade-in slide-in-from-top-2 duration-300">
-											<Link
-												to="/services#residential"
-												className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
-												Residential Solar Solutions
-											</Link>
-											<Link
-												to="/services#commercial"
-												className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
-												Commercial & Industrial Solar
-											</Link>
-											<Link
-												to="/services#minigrids"
-												className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
-												Mini-grids & Off-grid Projects
-											</Link>
-											<Link
-												to="/services#emobility"
-												className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
-												Electric Mobility
-											</Link>
-											<Link
-												to="/services#waterheating"
-												className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
-												Solar Water Heating
-											</Link>
-											<Link
-												to="/services#maintenance"
-												className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
-												Operation and Maintenance
-											</Link>
+										<div className="absolute top-full left-0 pt-4 w-80 z-50">
+											<div className="bg-white shadow-2xl rounded-2xl py-4 border border-gray-100 animate-in fade-in slide-in-from-top-2 duration-300">
+												<Link
+													to="/services#residential"
+													onClick={() => setActiveMenu(null)}
+													className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
+													Residential Solar Solutions
+												</Link>
+												<Link
+													to="/services#commercial"
+													onClick={() => setActiveMenu(null)}
+													className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
+													Commercial & Industrial Solar
+												</Link>
+												<Link
+													to="/services#minigrids"
+													onClick={() => setActiveMenu(null)}
+													className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
+													Mini-grids & Off-grid Projects
+												</Link>
+												<Link
+													to="/services#emobility"
+													onClick={() => setActiveMenu(null)}
+													className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
+													Electric Mobility
+												</Link>
+												<Link
+													to="/services#waterheating"
+													onClick={() => setActiveMenu(null)}
+													className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
+													Solar Water Heating
+												</Link>
+												<Link
+													to="/services#maintenance"
+													onClick={() => setActiveMenu(null)}
+													className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
+													Operation and Maintenance
+												</Link>
+											</div>
 										</div>
 									)}
 								</div>
@@ -282,17 +297,21 @@ export function Header() {
 										)}
 									</Link>
 									{activeMenu === "media" && (
-										<div className="absolute top-full left-0 mt-4 w-56 bg-white shadow-2xl rounded-2xl py-4 border border-gray-100 animate-in fade-in slide-in-from-top-2 duration-300">
-											<Link
-												to="/media#blog"
-												className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
-												Blog
-											</Link>
-											<Link
-												to="/media#gallery"
-												className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
-												Gallery
-											</Link>
+										<div className="absolute top-full left-0 pt-4 w-56 z-50">
+											<div className="bg-white shadow-2xl rounded-2xl py-4 border border-gray-100 animate-in fade-in slide-in-from-top-2 duration-300">
+												<Link
+													to="/media#blog"
+													onClick={() => setActiveMenu(null)}
+													className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
+													Blog
+												</Link>
+												<Link
+													to="/media#gallery"
+													onClick={() => setActiveMenu(null)}
+													className="block px-6 py-3 text-gray-700 hover:bg-[#36AC43]/5 hover:text-[#36AC43] rounded-lg transition-all duration-200 font-medium">
+													Gallery
+												</Link>
+											</div>
 										</div>
 									)}
 								</div>

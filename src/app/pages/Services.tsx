@@ -10,9 +10,20 @@ import {
 	Camera,
 } from "lucide-react";
 import { AnimatedSection } from "../components/AnimatedSection";
+import { QuoteForm } from "../components/QuoteForm";
+import { ServiceModal, ServiceData } from "../components/ServiceModal";
+import { useState } from "react";
 
 export function Services() {
-	const services = [
+	const [selectedService, setSelectedService] = useState<ServiceData | null>(null);
+	const [isModalOpen, setIsModalOpen] = useState(false);
+
+	const handleReadMore = (service: ServiceData) => {
+		setSelectedService(service);
+		setIsModalOpen(true);
+	};
+
+	const services: ServiceData[] = [
 		{
 			id: "residential",
 			icon: Home,
@@ -119,43 +130,56 @@ export function Services() {
 			{/* Services Grid */}
 			<section className="py-24 bg-gradient-to-b from-white to-gray-50">
 				<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-					<div className="space-y-32">
-						{services.map((service, index) => (
-							<AnimatedSection
-								key={service.id}
-								animation={index % 2 === 0 ? "fade-right" : "fade-left"}>
+					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+						{services.map((service) => (
+							<AnimatedSection key={service.id} animation="fade-up">
 								<div
 									id={service.id}
-									className={`grid md:grid-cols-2 gap-16 items-center ${
-										index % 2 === 1 ? "md:flex-row-reverse" : ""
-									}`}>
-									<div className={index % 2 === 1 ? "md:order-2" : ""}>
-										<div className="bg-gradient-to-br from-[#36AC43] to-[#2d8c36] w-20 h-20 rounded-2xl flex items-center justify-center mb-8 shadow-xl">
-											<service.icon className="w-12 h-12 text-white" />
-										</div>
-										<h2 className="text-4xl font-bold mb-6 text-gray-900 leading-tight">
+									className="group bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 relative">
+
+									{/* Image Section */}
+									<div className="relative overflow-hidden">
+										<img
+											src={service.image}
+											alt={service.title}
+											className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110"
+										/>
+
+										{/* Overlay */}
+										<div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-500"></div>
+									</div>
+
+									{/* Content */}
+									<div className="p-8 flex flex-col h-[320px]">
+										<h2 className="text-2xl font-bold text-gray-900 mb-4 leading-snug transition-colors duration-300 group-hover:text-[#36AC43]">
 											{service.title}
 										</h2>
-										<p className="text-xl text-gray-600 mb-8 leading-relaxed">
+
+										<p className="text-gray-600 leading-relaxed mb-8 line-clamp-4">
 											{service.description}
 										</p>
-										<Link
-											to="/contact"
-											className="inline-block px-10 py-4 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white rounded-xl hover:shadow-2xl transition-all duration-300 font-bold text-xl transform hover:-translate-y-1">
-											Learn More
-										</Link>
-									</div>
-									<div className={index % 2 === 1 ? "md:order-1" : ""}>
-										<div className="relative">
-											<div className="absolute -top-6 -left-6 w-40 h-40 bg-[#36AC43]/10 rounded-full"></div>
-											<img
-												src={service.image}
-												alt={service.title}
-												className="rounded-3xl shadow-2xl w-full h-[500px] object-cover relative z-10"
-											/>
-											<div className="absolute -bottom-6 -right-6 w-40 h-40 bg-[#36AC43]/10 rounded-full"></div>
+
+										{/* Button */}
+										<div className="mt-auto">
+											<button
+												onClick={() => handleReadMore(service)}
+												className="inline-flex items-center gap-3 px-6 py-3 
+												bg-[#36AC43] text-white rounded-xl font-semibold
+												transition-all duration-300
+												group-hover:bg-[#2d8c36]
+												group-hover:shadow-lg">
+
+												<span>Read More</span>
+
+												<span className="transition-transform duration-300 group-hover:translate-x-1">
+													→
+												</span>
+											</button>
 										</div>
 									</div>
+
+									{/* Bottom Accent Line */}
+									<div className="h-1 w-0 bg-[#36AC43] transition-all duration-500 group-hover:w-full"></div>
 								</div>
 							</AnimatedSection>
 						))}
@@ -210,110 +234,15 @@ export function Services() {
 							</a>
 						</p>
 					</div>
-					<form className="space-y-6">
-						<div className="grid md:grid-cols-2 gap-6">
-							<input
-								type="text"
-								placeholder="Name"
-								className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#36AC43] text-lg"
-							/>
-							<input
-								type="email"
-								placeholder="Email"
-								className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#36AC43] text-lg"
-							/>
-						</div>
-						<div className="grid md:grid-cols-2 gap-6">
-							<input
-								type="tel"
-								placeholder="Phone"
-								className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#36AC43] text-lg"
-							/>
-							<input
-								type="text"
-								placeholder="Address"
-								className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#36AC43] text-lg"
-							/>
-						</div>
-						<div className="grid md:grid-cols-2 gap-6">
-							<input
-								type="text"
-								placeholder="System Installer?"
-								className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#36AC43] text-lg"
-							/>
-							<input
-								type="text"
-								placeholder="Project completed by?"
-								className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#36AC43] text-lg"
-							/>
-						</div>
-						<div className="grid md:grid-cols-2 gap-6">
-							<input
-								type="number"
-								placeholder="Monthly electric usage in kWh?"
-								className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#36AC43] text-lg"
-							/>
-							<input
-								type="text"
-								placeholder="Solar system type?"
-								className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#36AC43] text-lg"
-							/>
-						</div>
-						<div className="grid md:grid-cols-2 gap-6">
-							<input
-								type="text"
-								placeholder="Solar panels place?"
-								className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#36AC43] text-lg"
-							/>
-							<input
-								type="text"
-								placeholder="Materials on your roof?"
-								className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#36AC43] text-lg"
-							/>
-						</div>
-						<div>
-							<label className="block text-gray-700 mb-2 text-base">
-								Preferred Contact Method
-							</label>
-							<div className="flex gap-4 text-base">
-								<label className="flex items-center gap-2">
-									<input
-										type="radio"
-										name="contact"
-										value="all"
-										className="text-[#36AC43]"
-										defaultChecked
-									/>
-									<span>All</span>
-								</label>
-								<label className="flex items-center gap-2">
-									<input
-										type="radio"
-										name="contact"
-										value="email"
-										className="text-[#36AC43]"
-									/>
-									<span>Email</span>
-								</label>
-								<label className="flex items-center gap-2">
-									<input
-										type="radio"
-										name="contact"
-										value="phone"
-										className="text-[#36AC43]"
-									/>
-									<span>Phone</span>
-								</label>
-							</div>
-						</div>
-						<button
-							type="submit"
-							className="w-full px-8 py-4 bg-[#36AC43] text-white rounded-lg hover:bg-[#2d8c36] text-xl font-semibold">
-							Submit Request
-						</button>
-					</form>
+					<QuoteForm />
 				</div>
 			</section>
+			
+			<ServiceModal
+				isOpen={isModalOpen}
+				onClose={() => setIsModalOpen(false)}
+				service={selectedService}
+			/>
 		</div>
 	);
 }

@@ -10,8 +10,21 @@ export function Layout() {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [location.pathname]);
+    if (location.hash) {
+      setTimeout(() => {
+        const id = location.hash.replace("#", "");
+        const element = document.getElementById(id);
+        if (element) {
+          // Adjust scroll position for the fixed header
+          const yOffset = -100;
+          const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location.pathname, location.hash]);
 
   return (
     <div className="min-h-screen flex flex-col">

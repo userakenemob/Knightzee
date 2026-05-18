@@ -8,6 +8,7 @@ import { EcoHubModal } from "../components/EcoHubModal";
 import { TestimonialCarousel } from "../components/TestimonialCarousel";
 import { SolarCalculator } from "../components/SolarCalculator";
 import { FAQAccordion } from "../components/FAQAccordion";
+import { QuoteForm } from "../components/QuoteForm";
 
 export function Home() {
 	const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -613,108 +614,7 @@ export function Home() {
 									Get a customized solar solution for your needs
 								</p>
 							</div>
-							<form className="bg-white p-8 lg:p-10 rounded-3xl shadow-2xl space-y-6">
-								<div className="grid md:grid-cols-2 gap-6">
-									<input
-										type="text"
-										placeholder="Name"
-										className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
-									/>
-									<input
-										type="email"
-										placeholder="Email"
-										className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
-									/>
-								</div>
-								<div className="grid md:grid-cols-2 gap-6">
-									<input
-										type="tel"
-										placeholder="Phone"
-										className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
-									/>
-									<input
-										type="text"
-										placeholder="Address"
-										className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
-									/>
-								</div>
-								<div className="grid md:grid-cols-2 gap-6">
-									<input
-										type="text"
-										placeholder="System Installer?"
-										className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
-									/>
-									<input
-										type="text"
-										placeholder="Project completed by?"
-										className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
-									/>
-								</div>
-								<div className="grid md:grid-cols-2 gap-6">
-									<input
-										type="number"
-										placeholder="Monthly electric usage in kWh?"
-										className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
-									/>
-									<input
-										type="text"
-										placeholder="Solar system type?"
-										className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
-									/>
-								</div>
-								<div className="grid md:grid-cols-2 gap-6">
-									<input
-										type="text"
-										placeholder="Solar panels place?"
-										className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
-									/>
-									<input
-										type="text"
-										placeholder="Materials on your roof?"
-										className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
-									/>
-								</div>
-								<div>
-									<label className="block text-gray-700 font-semibold mb-4 text-xl">
-										Preferred Contact Method
-									</label>
-									<div className="flex gap-6">
-										<label className="flex items-center gap-3 cursor-pointer">
-											<input
-												type="radio"
-												name="contact"
-												value="all"
-												className="w-5 h-5 text-[#36AC43]"
-												defaultChecked
-											/>
-											<span className="text-gray-700 text-lg">All</span>
-										</label>
-										<label className="flex items-center gap-3 cursor-pointer">
-											<input
-												type="radio"
-												name="contact"
-												value="email"
-												className="w-5 h-5 text-[#36AC43]"
-											/>
-											<span className="text-gray-700 text-lg">Email</span>
-										</label>
-										<label className="flex items-center gap-3 cursor-pointer">
-											<input
-												type="radio"
-												name="contact"
-												value="phone"
-												className="w-5 h-5 text-[#36AC43]"
-											/>
-											<span className="text-gray-700 text-lg">Phone</span>
-										</label>
-									</div>
-								</div>
-								<button
-									type="submit"
-									className="w-full px-8 py-5 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white rounded-xl hover:shadow-2xl text-xl font-bold transition-all duration-300 transform hover:-translate-y-1">
-									Submit Request
-								</button>
-							</form>
+							<QuoteForm />
 						</div>
 					</div>
 				</div>

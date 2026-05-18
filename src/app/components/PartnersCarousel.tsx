@@ -4,16 +4,16 @@ import "slick-carousel/slick/slick-theme.css";
 
 export function PartnersCarousel() {
   const partners = [
-    { name: "Molo Rivers Roses", logo: "https://via.placeholder.com/200x100/36AC43/FFFFFF?text=Molo+Rivers" },
-    { name: "Missionary Benedictines", logo: "https://via.placeholder.com/200x100/36AC43/FFFFFF?text=Benedictines" },
-    { name: "MEGA PACK", logo: "https://via.placeholder.com/200x100/36AC43/FFFFFF?text=MEGA+PACK" },
-    { name: "KLM Air France", logo: "https://via.placeholder.com/200x100/36AC43/FFFFFF?text=KLM" },
-    { name: "KICC", logo: "https://via.placeholder.com/200x100/36AC43/FFFFFF?text=KICC" },
-    { name: "Standard Chartered", logo: "https://via.placeholder.com/200x100/36AC43/FFFFFF?text=Standard+Chartered" },
-    { name: "IBER Africa", logo: "https://via.placeholder.com/200x100/36AC43/FFFFFF?text=IBER+Africa" },
-    { name: "BAT Kenya", logo: "https://via.placeholder.com/200x100/36AC43/FFFFFF?text=BAT" },
-    { name: "TotalEnergies", logo: "https://via.placeholder.com/200x100/36AC43/FFFFFF?text=Total" },
-    { name: "Elly's Pharmaceuticals", logo: "https://via.placeholder.com/200x100/36AC43/FFFFFF?text=Ellys" },
+    { name: "Molo Rivers Roses", logo: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778835841/Zena_rmk2bt.jpg" },
+    { name: "Missionary Benedictines", logo: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778835833/Missionary-Benedictines-sisters_coa2iu.jpg" },
+    { name: "MEGA PACK", logo: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778835832/MEGA-PACK_kmlozg.jpg" },
+    { name: "KLM Air France", logo: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778835839/wonderfeeds_ahv1dz.jpg" },
+    { name: "KICC", logo: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778835837/The-Well_vpnbl6.jpg" },
+    { name: "Standard Chartered", logo: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778835836/St-Scholastica-Uzima-Hospital_jm2uxf.jpg" },
+    { name: "IBER Africa", logo: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778835836/Signon-Aviation_zdk3ly.jpg" },
+    { name: "BAT Kenya", logo: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778835835/SIGMA-FEEDS_yvufpp.jpg" },
+    { name: "TotalEnergies", logo: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1779091988/TOTAL-LOGO_bhyxfo.png" },
+    { name: "Elly's Pharmaceuticals", logo: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778835835/Shell_nk8trx.jpg" },
   ];
 
   const settings = {

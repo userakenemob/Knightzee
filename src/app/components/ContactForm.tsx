@@ -30,10 +30,20 @@ export function ContactForm() {
       return;
     }
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    // Construct email body
+    const subject = "New Contact Form Submission";
+    const body = `Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Service: ${formData.service}
 
-    toast.success("Message sent successfully! We'll get back to you soon.");
+Message:
+${formData.message}`;
+
+    // Open user's email client
+    window.location.href = `mailto:info@knightsandapps.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    toast.success("Opening your email client...");
 
     // Reset form
     setFormData({

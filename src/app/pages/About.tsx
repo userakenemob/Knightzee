@@ -8,8 +8,84 @@ import {
 	UserPlus,
 } from "lucide-react";
 import { AnimatedSection } from "../components/AnimatedSection";
+import { JobModal, JobData } from "../components/JobModal";
+import { useState } from "react";
+import { Calendar } from "lucide-react";
 
 export function About() {
+	const [selectedJob, setSelectedJob] = useState<JobData | null>(null);
+	const [isJobModalOpen, setIsJobModalOpen] = useState(false);
+
+	const handleReadMoreJob = (job: JobData) => {
+		setSelectedJob(job);
+		setIsJobModalOpen(true);
+	};
+	const jobs: JobData[] = [
+		{
+			title: "Senior Solar Engineer",
+			experience: "5+ Years",
+			education: "Bachelor's Degree in Engineering or related field",
+			deadline: "October 30, 2026",
+			description: "We are looking for an experienced Solar Engineer to lead our commercial and industrial solar installations. The ideal candidate will have a strong background in PV system design, project management, and a passion for renewable energy.",
+			fullDescription: [
+				"We are looking for an experienced Solar Engineer to lead our commercial and industrial solar installations.",
+				"Key Responsibilities:",
+				"- Design and review complex solar PV systems (on-grid, off-grid, and hybrid).",
+				"- Conduct site assessments, feasibility studies, and energy yield analyses.",
+				"- Oversee the technical implementation of projects to ensure they meet quality and safety standards.",
+				"- Collaborate with the sales and project management teams to deliver customized solutions for our clients.",
+				"- Ensure compliance with local electrical codes and regulatory requirements.",
+				"Requirements:",
+				"- Bachelor's Degree in Electrical Engineering, Renewable Energy, or a related field.",
+				"- Minimum of 5 years of experience in solar PV system design and installation.",
+				"- Proficiency in PVsyst, AutoCAD, and other design software.",
+				"- Strong analytical and problem-solving skills.",
+			]
+		},
+		{
+			title: "Sales & Business Development Manager",
+			experience: "3-5 Years",
+			education: "Bachelor's Degree in Business, Marketing, or equivalent",
+			deadline: "November 15, 2026",
+			description: "Join our dynamic sales team to drive growth in East Africa. You will be responsible for identifying new market opportunities, building relationships with key stakeholders, and closing B2B solar and e-mobility projects.",
+			fullDescription: [
+				"Join our dynamic sales team to drive growth in East Africa. You will be responsible for identifying new market opportunities, building relationships with key stakeholders, and closing B2B solar and e-mobility projects.",
+				"Key Responsibilities:",
+				"- Identify and generate new business opportunities in the commercial, industrial, and residential sectors.",
+				"- Develop and maintain strong relationships with key decision-makers and prospective clients.",
+				"- Prepare and present tailored proposals and financial analyses to clients.",
+				"- Meet and exceed quarterly and annual sales targets.",
+				"- Stay updated on industry trends, competitor activities, and regulatory changes.",
+				"Requirements:",
+				"- Bachelor's Degree in Business, Marketing, or a related field.",
+				"- 3-5 years of proven B2B sales experience, preferably in the renewable energy sector.",
+				"- Excellent communication, negotiation, and presentation skills.",
+				"- Ability to work independently and as part of a collaborative team.",
+			]
+		},
+		{
+			title: "Electrical Technician",
+			experience: "2+ Years",
+			education: "Diploma in Electrical Engineering or equivalent certification",
+			deadline: "December 01, 2026",
+			description: "We are seeking a hands-on Electrical Technician to assist with the installation, maintenance, and troubleshooting of solar panels, inverters, and battery storage systems across residential and commercial sites.",
+			fullDescription: [
+				"We are seeking a hands-on Electrical Technician to assist with the installation, maintenance, and troubleshooting of solar panels, inverters, and battery storage systems across residential and commercial sites.",
+				"Key Responsibilities:",
+				"- Perform installation and wiring of solar panels, inverters, and battery storage systems.",
+				"- Conduct routine maintenance, inspections, and troubleshooting of existing solar power plants.",
+				"- Ensure all electrical work complies with national and local safety regulations.",
+				"- Maintain accurate records of materials used and work performed.",
+				"- Provide excellent customer service during site visits.",
+				"Requirements:",
+				"- Diploma or Certificate in Electrical Engineering or a relevant trade certification.",
+				"- At least 2 years of practical experience in electrical installations, preferably in solar energy.",
+				"- Strong understanding of electrical safety procedures and regulations.",
+				"- Ability to work at heights and in various outdoor conditions.",
+			]
+		}
+	];
+
 	return (
 		<div className="w-full">
 			{/* Hero */}
@@ -226,23 +302,66 @@ export function About() {
 				</div>
 			</section>
 
-			{/* Careers CTA */}
+			{/* Careers Section */}
 			<section
-				className="py-24 bg-gradient-to-br from-[#36AC43] to-[#2d8c36] text-white"
+				className="py-24 bg-gradient-to-br from-[#36AC43] to-[#2d8c36]"
 				id="careers">
-				<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-					<h2 className="text-4xl font-bold mb-8">Join Our Team</h2>
-					<p className="text-2xl mb-12 max-w-3xl mx-auto leading-relaxed">
-						Be part of East Africa's leading renewable energy company and help
-						build a sustainable future.
-					</p>
-					<Link
-						to="/contact"
-						className="inline-block px-12 py-5 bg-white text-[#36AC43] rounded-xl hover:bg-gray-100 font-bold text-xl shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-						View Open Positions
-					</Link>
+				<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+					<div className="text-center mb-16 text-white">
+						<h2 className="text-4xl font-bold mb-6">Join Our Team</h2>
+						<p className="text-2xl max-w-3xl mx-auto leading-relaxed text-white/90">
+							Be part of East Africa's leading renewable energy company and help
+							build a sustainable future.
+						</p>
+					</div>
+
+					<div className="grid lg:grid-cols-3 gap-8">
+						{jobs.map((job, index) => (
+							<div key={index} className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col h-full text-left">
+								<h3 className="text-2xl font-bold text-gray-900 mb-4">{job.title}</h3>
+								
+								<div className="space-y-3 mb-6">
+									<div className="flex items-start gap-3">
+										<Briefcase className="w-5 h-5 text-[#36AC43] flex-shrink-0 mt-0.5" />
+										<span className="text-gray-700"><strong>Experience:</strong> {job.experience}</span>
+									</div>
+									<div className="flex items-start gap-3">
+										<Award className="w-5 h-5 text-[#36AC43] flex-shrink-0 mt-0.5" />
+										<span className="text-gray-700"><strong>Education:</strong> {job.education}</span>
+									</div>
+									<div className="flex items-start gap-3">
+										<Calendar className="w-5 h-5 text-[#36AC43] flex-shrink-0 mt-0.5" />
+										<span className="text-gray-700 font-semibold text-[#36AC43]">Apply by: {job.deadline}</span>
+									</div>
+								</div>
+								
+								<p className="text-gray-600 leading-relaxed mb-8 flex-grow">
+									{job.description}
+								</p>
+								
+								<button
+									onClick={() => handleReadMoreJob(job)}
+									className="mt-auto block w-full text-center px-6 py-4 border-2 border-[#36AC43] text-[#36AC43] rounded-xl hover:bg-[#36AC43] hover:text-white font-bold text-lg transition-all duration-300"
+								>
+									Read More & Apply
+								</button>
+							</div>
+						))}
+					</div>
+
+					<div className="text-center mt-12 text-white">
+						<p className="text-xl">
+							Don't see a position that fits? Send your CV to <a href="mailto:hr@knightsandapps.com" className="font-bold underline hover:text-gray-200">hr@knightsandapps.com</a>
+						</p>
+					</div>
 				</div>
 			</section>
+
+			<JobModal
+				isOpen={isJobModalOpen}
+				onClose={() => setIsJobModalOpen(false)}
+				job={selectedJob}
+			/>
 		</div>
 	);
 }
