@@ -15,7 +15,7 @@ export const blogs: BlogPost[] = [
     title: "The Future of Solar Energy in East Africa",
     date: "May 10, 2026",
     excerpt: "Exploring the rapidly growing solar energy market in Kenya, Uganda, and Tanzania, and what it means for businesses and homeowners.",
-    image: "https://images.unsplash.com/photo-1726221062287-fda475b85493?w=800",
+    image: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1779091984/KNIGTHS-ENERGY-670x4441-1-670x444_rjh6vl.jpg",
     author: "Knights Energy Team",
     category: "Industry Insights",
     content: [
@@ -34,7 +34,7 @@ export const blogs: BlogPost[] = [
     title: "How to Choose the Right Solar System for Your Business",
     date: "May 5, 2026",
     excerpt: "A comprehensive guide to selecting the perfect commercial solar solution based on your energy needs and budget.",
-    image: "https://images.unsplash.com/photo-1629726797843-618688139f5a?w=800",
+    image: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1779091984/KNIGHTS-ENERGY-ABOUT-US-870x448_afavyw.jpg",
     author: "Knights Energy Team",
     category: "How-To Guides",
     content: [
@@ -54,7 +54,7 @@ export const blogs: BlogPost[] = [
     title: "E-Mobility Revolution: Electric Vehicles and Solar Charging",
     date: "April 28, 2026",
     excerpt: "Discover how solar-powered EV charging stations are transforming transportation across East Africa.",
-    image: "https://images.unsplash.com/photo-1726221062415-9c403cd9aea5?w=800",
+    image: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1779091984/KNIGTHS-ENERGY-EMOBILITY-570x464_zlayw6.jpg",
     author: "Knights Energy Team",
     category: "E-Mobility",
     content: [
@@ -74,7 +74,7 @@ export const blogs: BlogPost[] = [
     title: "Case Study: 575kW Installation at IBER Africa",
     date: "April 20, 2026",
     excerpt: "Learn how our largest rooftop solar installation is helping IBER Africa achieve energy independence and cost savings.",
-    image: "https://images.unsplash.com/photo-1670519808728-335b1eb2ef52?w=800",
+    image: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1779097683/KNIGTHS-ENERGY-IBER-Africa_xyuibp.jpg",
     author: "Knights Energy Team",
     category: "Case Studies",
     content: [
@@ -94,7 +94,7 @@ export const blogs: BlogPost[] = [
     title: "Maintenance Tips for Maximum Solar Panel Efficiency",
     date: "April 15, 2026",
     excerpt: "Expert advice on keeping your solar panels operating at peak performance year-round.",
-    image: "https://images.unsplash.com/photo-1774542916400-77f2dd1744d7?w=800",
+    image: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1779091985/KNIGTHS-ENERGY-COMMERCIAL-INDUSTRIAL-SOLAR-SOLUTIONS-570x464_ptivn3.jpg",
     author: "Knights Energy Team",
     category: "Maintenance",
     content: [
@@ -115,7 +115,7 @@ export const blogs: BlogPost[] = [
     title: "Solar Water Heating: A Cost-Effective Solution",
     date: "April 8, 2026",
     excerpt: "Why solar water heating systems are becoming increasingly popular for both residential and commercial applications.",
-    image: "https://images.unsplash.com/photo-1776918570438-886f538edd93?w=800",
+    image: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1779091985/KNIGTHS-ENERGY-SOLAR-WATER-HEATING-570x464_fdzhw2.jpg",
     author: "Knights Energy Team",
     category: "Solutions",
     content: [
