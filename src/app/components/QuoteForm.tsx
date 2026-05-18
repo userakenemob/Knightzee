@@ -71,7 +71,7 @@ Preferred Contact Method: ${formData.contactMethod}`;
 		setIsSubmitting(false);
 	};
 
-	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+	const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
 		const { name, value } = e.target;
 		setFormData((prev) => ({ ...prev, [name]: value }));
 	};
@@ -119,22 +119,29 @@ Preferred Contact Method: ${formData.contactMethod}`;
 				/>
 			</div>
 			<div className="grid md:grid-cols-2 gap-6">
-				<input
-					type="text"
+				<select
 					name="systemInstaller"
 					value={formData.systemInstaller}
 					onChange={handleChange}
-					placeholder="System Installer?"
-					className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
-				/>
-				<input
-					type="text"
+					className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg bg-white"
+				>
+					<option value="" disabled>System Installer?</option>
+					<option value="Myself">Myself</option>
+					<option value="A local contractor">A local contractor</option>
+					<option value="Other - Friend/Neighbor/Family">Other - Friend/Neighbor/Family</option>
+				</select>
+				<select
 					name="projectCompletedBy"
 					value={formData.projectCompletedBy}
 					onChange={handleChange}
-					placeholder="Project completed by?"
-					className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
-				/>
+					className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg bg-white"
+				>
+					<option value="" disabled>Project completed by?</option>
+					<option value="Undecided">Undecided</option>
+					<option value="0-3 Months">0-3 Months</option>
+					<option value="3-6 Months">3-6 Months</option>
+					<option value="6+ Months">6+ Months</option>
+				</select>
 			</div>
 			<div className="grid md:grid-cols-2 gap-6">
 				<input
@@ -145,32 +152,43 @@ Preferred Contact Method: ${formData.contactMethod}`;
 					placeholder="Monthly electric usage in kWh?"
 					className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
 				/>
-				<input
-					type="text"
+				<select
 					name="systemType"
 					value={formData.systemType}
 					onChange={handleChange}
-					placeholder="Solar system type?"
-					className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
-				/>
+					className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg bg-white"
+				>
+					<option value="" disabled>Solar system type?</option>
+					<option value="Off Grid">Off Grid</option>
+					<option value="Grid Tie">Grid Tie</option>
+					<option value="Grid Tie w/ Backup">Grid Tie w/ Backup</option>
+					<option value="Other">Other</option>
+				</select>
 			</div>
 			<div className="grid md:grid-cols-2 gap-6">
-				<input
-					type="text"
+				<select
 					name="panelsPlace"
 					value={formData.panelsPlace}
 					onChange={handleChange}
-					placeholder="Solar panels place?"
-					className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
-				/>
-				<input
-					type="text"
+					className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg bg-white"
+				>
+					<option value="" disabled>Solar panels place?</option>
+					<option value="Roof Mounted">Roof Mounted</option>
+					<option value="Ground Mounted">Ground Mounted</option>
+					<option value="To Be Determined">To Be Determined</option>
+				</select>
+				<select
 					name="roofMaterials"
 					value={formData.roofMaterials}
 					onChange={handleChange}
-					placeholder="Materials on your roof?"
-					className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg"
-				/>
+					className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#36AC43] focus:ring-4 focus:ring-[#36AC43]/10 transition-all duration-300 text-lg bg-white"
+				>
+					<option value="" disabled>Materials on your roof?</option>
+					<option value="Comp Shingle">Comp Shingle</option>
+					<option value="Tile">Tile</option>
+					<option value="Metal">Metal</option>
+					<option value="Other">Other</option>
+				</select>
 			</div>
 			<div>
 				<label className="block text-gray-700 font-semibold mb-4 text-xl">
