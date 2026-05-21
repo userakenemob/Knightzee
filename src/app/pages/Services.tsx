@@ -111,16 +111,16 @@ export function Services() {
 		<div className="w-full">
 			{/* Hero */}
 			<section
-				className="relative min-h-[500px] bg-cover bg-center flex items-center"
+				className="relative min-h-[300px] md:min-h-[500px] bg-cover bg-center flex items-center"
 				style={{
 					backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1774927334511-c2d1cf654b08?w=1600')`,
 				}}>
-				<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-white w-full text-center py-28">
-					<h1 className="text-5xl lg:text-6xl font-bold mb-6">Our Services</h1>
-					<p className="text-3xl text-gray-200 mb-4">
+				<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-white w-full text-center py-16 sm:py-28">
+					<h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-6">Our Services</h1>
+					<p className="text-xl sm:text-2xl lg:text-3xl text-gray-200 mb-4">
 						Fostering the Growth of Solar Energy Market
 					</p>
-					<p className="text-xl text-gray-300 max-w-3xl mx-auto">
+					<p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
 						A Leading Supplier Of Solar Materials For Manufacturers, Installers
 						& Contractors
 					</p>
@@ -128,9 +128,9 @@ export function Services() {
 			</section>
 
 			{/* Services Grid */}
-			<section className="py-24 bg-gradient-to-b from-white to-gray-50">
+			<section className="py-12 sm:py-24 bg-gradient-to-b from-white to-gray-50">
 				<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+					<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
 						{services.map((service) => (
 							<AnimatedSection key={service.id} animation="fade-up">
 								<div
@@ -142,7 +142,7 @@ export function Services() {
 										<img
 											src={service.image}
 											alt={service.title}
-											className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110"
+											className="w-full h-52 sm:h-72 object-cover transition-transform duration-700 group-hover:scale-110"
 										/>
 
 										{/* Overlay */}
@@ -150,12 +150,12 @@ export function Services() {
 									</div>
 
 									{/* Content */}
-									<div className="p-8 flex flex-col h-[320px]">
-										<h2 className="text-2xl font-bold text-gray-900 mb-4 leading-snug transition-colors duration-300 group-hover:text-[#36AC43]">
+									<div className="p-6 sm:p-8 flex flex-col h-auto sm:h-[320px]">
+										<h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 leading-snug transition-colors duration-300 group-hover:text-[#36AC43]">
 											{service.title}
 										</h2>
 
-										<p className="text-gray-600 leading-relaxed mb-8 line-clamp-4">
+										<p className="text-gray-600 leading-relaxed mb-6 sm:mb-8 line-clamp-4">
 											{service.description}
 										</p>
 
@@ -163,7 +163,7 @@ export function Services() {
 										<div className="mt-auto">
 											<button
 												onClick={() => handleReadMore(service)}
-												className="inline-flex items-center gap-3 px-6 py-3 
+												className="inline-flex items-center gap-3 px-5 py-2.5 sm:px-6 sm:py-3 
 												bg-[#36AC43] text-white rounded-xl font-semibold
 												transition-all duration-300
 												group-hover:bg-[#2d8c36]
@@ -188,20 +188,20 @@ export function Services() {
 			</section>
 
 			{/* Testimonials */}
-			<section className="py-24 bg-gradient-to-br from-gray-900 to-gray-800">
+			<section className="py-12 sm:py-24 bg-gradient-to-br from-gray-900 to-gray-800">
 				<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-					<h2 className="text-4xl font-bold mb-16 text-center text-white">
+					<h2 className="text-2xl sm:text-4xl font-bold mb-10 sm:mb-16 text-center text-white">
 						What our clients have to say!
 					</h2>
-					<div className="grid md:grid-cols-3 gap-10">
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-10">
 						{[1, 2, 3].map((index) => (
 							<div
 								key={index}
-								className="bg-white/10 backdrop-blur-sm p-10 rounded-3xl shadow-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-2">
+								className="bg-white/10 backdrop-blur-sm p-6 sm:p-10 rounded-3xl shadow-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-2">
 								<div className="flex items-center mb-6">
 									<div className="text-[#36AC43] text-3xl">★★★★★</div>
 								</div>
-								<p className="text-white text-xl mb-8 leading-relaxed">
+								<p className="text-white text-base sm:text-lg md:text-xl mb-8 leading-relaxed">
 									"Knights Energy delivered an exceptional solar solution for
 									our facility. The team was professional, and the installation
 									exceeded our expectations."
@@ -209,8 +209,8 @@ export function Services() {
 								<div className="flex items-center">
 									<div className="w-16 h-16 bg-gradient-to-br from-[#36AC43] to-[#2d8c36] rounded-full mr-4"></div>
 									<div>
-										<p className="font-bold text-white text-xl">Client Name</p>
-										<p className="text-gray-300 text-base">Company Name</p>
+										<p className="font-bold text-white text-lg sm:text-xl">Client Name</p>
+										<p className="text-gray-300 text-sm sm:text-base">Company Name</p>
 									</div>
 								</div>
 							</div>
@@ -220,13 +220,13 @@ export function Services() {
 			</section>
 
 			{/* Quote Form */}
-			<section className="py-16 bg-white">
-				<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+			<section className="py-12 sm:py-16 bg-white">
+				<div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
 					<div className="text-center mb-8">
-						<h2 className="text-4xl font-bold mb-4 text-gray-900">
+						<h2 className="text-2xl sm:text-4xl font-bold mb-4 text-gray-900">
 							Request A Quote
 						</h2>
-						<p className="text-xl text-gray-600">
+						<p className="text-lg sm:text-xl text-gray-600">
 							Receive an accurate quote within 3-5 days when you fill out the
 							form below. Or, give us a call:{" "}
 							<a href="tel:+254788220607" className="text-[#36AC43] font-bold">

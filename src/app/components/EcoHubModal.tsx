@@ -33,45 +33,45 @@ export function EcoHubModal({ isOpen, onClose, title, content }: EcoHubModalProp
         onClick={onClose}
       ></div>
       <div className="relative bg-white rounded-3xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto animate-in zoom-in-95 duration-300">
-        <div className="sticky top-0 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white p-8 rounded-t-3xl">
+        <div className="sticky top-0 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white p-6 sm:p-8 rounded-t-3xl z-20">
           <button
             onClick={onClose}
-            className="absolute top-6 right-6 text-white hover:text-gray-200 transition-colors"
+            className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white hover:text-gray-200 transition-colors"
           >
-            <X className="w-8 h-8" />
+            <X className="w-6 h-6 sm:w-8 sm:h-8" />
           </button>
-          <h2 className="text-4xl font-bold pr-12">{title}</h2>
+          <h2 className="text-2xl sm:text-4xl font-bold pr-8 sm:pr-12">{title}</h2>
         </div>
-        <div className="p-8 lg:p-12">
-          <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+        <div className="p-6 sm:p-8 lg:p-12">
+          <p className="text-lg sm:text-xl text-gray-700 mb-6 sm:mb-8 leading-relaxed">
             {content.description}
           </p>
 
-          <h3 className="text-2xl font-bold mb-6 text-gray-900">Key Benefits</h3>
-          <ul className="space-y-4 mb-8">
+          <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-gray-900">Key Benefits</h3>
+          <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
             {content.benefits.map((benefit, index) => (
               <li key={index} className="flex items-start gap-3">
-                <span className="w-6 h-6 rounded-full bg-[#36AC43] text-white flex items-center justify-center flex-shrink-0 mt-1 font-bold text-sm">
+                <span className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#36AC43] text-white flex items-center justify-center flex-shrink-0 mt-1 font-bold text-xs sm:text-sm">
                   ✓
                 </span>
-                <span className="text-lg text-gray-700 leading-relaxed">{benefit}</span>
+                <span className="text-base sm:text-lg text-gray-700 leading-relaxed">{benefit}</span>
               </li>
             ))}
           </ul>
 
-          <h3 className="text-2xl font-bold mb-6 text-gray-900">How It Works</h3>
-          <div className="space-y-4">
+          <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-gray-900">How It Works</h3>
+          <div className="space-y-3 sm:space-y-4">
             {content.details.map((detail, index) => (
-              <p key={index} className="text-lg text-gray-700 leading-relaxed">
+              <p key={index} className="text-base sm:text-lg text-gray-700 leading-relaxed">
                 {detail}
               </p>
             ))}
           </div>
 
-          <div className="mt-10 pt-8 border-t border-gray-200">
+          <div className="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-gray-200">
             <button
               onClick={onClose}
-              className="w-full px-8 py-4 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white rounded-xl hover:shadow-xl transition-all duration-300 font-bold text-xl"
+              className="w-full px-6 sm:px-8 py-3.5 sm:py-4 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white rounded-xl hover:shadow-xl transition-all duration-300 font-bold text-lg sm:text-xl"
             >
               Close
             </button>

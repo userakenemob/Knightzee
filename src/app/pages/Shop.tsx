@@ -49,14 +49,14 @@ export function Shop() {
     <div className="w-full bg-gray-50 min-h-screen">
       {/* Hero */}
       <section
-        className="relative min-h-[400px] bg-cover bg-center flex items-center"
+        className="relative min-h-[300px] md:min-h-[400px] bg-cover bg-center flex items-center"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1670519808728-335b1eb2ef52?w=1600')`,
         }}
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-white w-full text-center py-20">
-          <h1 className="text-5xl lg:text-6xl font-bold mb-6">Our Shop</h1>
-          <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-white w-full text-center py-16 sm:py-20">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-6">Our Shop</h1>
+          <p className="text-lg sm:text-xl text-gray-200 max-w-2xl mx-auto">
             Quality solar equipment, inverters, e-mobility accessories, and measurement tools for your energy needs.
           </p>
         </div>
@@ -68,10 +68,10 @@ export function Shop() {
           
           <div className="flex flex-col lg:flex-row gap-10">
             {/* Sidebar / Filters */}
-            <div className="w-full lg:w-1/4 space-y-8">
+            <div className="w-full lg:w-1/4 space-y-6 sm:space-y-8">
               {/* Search */}
-              <div className="bg-white p-6 rounded-3xl shadow-lg border border-gray-100">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <div className="bg-white p-5 sm:p-6 rounded-3xl shadow-lg border border-gray-100">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
                   <Search className="w-5 h-5 text-[#36AC43]" /> Search
                 </h3>
                 <div className="relative">
@@ -80,23 +80,23 @@ export function Shop() {
                     placeholder="Search products..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full pl-10 pr-4 py-3 bg-gray-50 border-none rounded-xl focus:ring-2 focus:ring-[#36AC43] text-gray-700 placeholder-gray-400 transition-shadow"
+                    className="w-full pl-10 pr-4 py-3 bg-gray-50 border-none rounded-xl focus:ring-2 focus:ring-[#36AC43] text-gray-700 placeholder-gray-400 transition-shadow text-sm sm:text-base"
                   />
                   <Search className="w-5 h-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2" />
                 </div>
               </div>
 
               {/* Categories */}
-              <div className="bg-white p-6 rounded-3xl shadow-lg border border-gray-100">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <div className="bg-white p-5 sm:p-6 rounded-3xl shadow-lg border border-gray-100">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
                   <Filter className="w-5 h-5 text-[#36AC43]" /> Categories
                 </h3>
-                <div className="flex flex-col gap-2">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:flex lg:flex-col gap-2">
                   {categories.map(category => (
                     <button
                       key={category}
                       onClick={() => setSelectedCategory(category)}
-                      className={`text-left px-4 py-3 rounded-xl transition-all duration-300 font-medium ${
+                      className={`text-left px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl transition-all duration-300 font-medium text-xs sm:text-sm md:text-base ${
                         selectedCategory === category 
                           ? "bg-[#36AC43] text-white shadow-md" 
                           : "text-gray-600 hover:bg-gray-50 hover:text-[#36AC43]"
@@ -112,13 +112,13 @@ export function Shop() {
             {/* Main Content */}
             <div className="w-full lg:w-3/4">
               {/* Header */}
-              <div className="bg-white px-8 py-4 rounded-3xl shadow-md border border-gray-100 flex justify-between items-center mb-8">
-                <p className="text-gray-600 font-medium">
+              <div className="bg-white px-6 py-4 sm:px-8 rounded-3xl shadow-md border border-gray-100 flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center mb-8">
+                <p className="text-gray-600 font-medium text-sm sm:text-base">
                   Showing <span className="text-[#36AC43] font-bold">{(currentPage - 1) * ITEMS_PER_PAGE + 1}</span>–
                   <span className="text-[#36AC43] font-bold">{Math.min(currentPage * ITEMS_PER_PAGE, filteredProducts.length)}</span> of{" "}
                   <span className="text-gray-900 font-bold">{filteredProducts.length}</span> results
                 </p>
-                <select className="bg-gray-50 border-none px-4 py-2 rounded-xl focus:ring-2 focus:ring-[#36AC43] text-gray-700 font-medium cursor-pointer">
+                <select className="bg-gray-50 border-none px-4 py-2 rounded-xl focus:ring-2 focus:ring-[#36AC43] text-gray-700 font-medium cursor-pointer text-sm sm:text-base w-full sm:w-auto">
                   <option>Sort by latest</option>
                   <option>Price: low to high</option>
                   <option>Price: high to low</option>
@@ -127,11 +127,11 @@ export function Shop() {
 
               {/* Products Grid */}
               {currentProducts.length > 0 ? (
-                <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
                   {currentProducts.map((product, index) => (
                     <AnimatedSection key={product.id} animation="fade-up" delay={index * 50}>
                       <div className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 group flex flex-col h-full border border-gray-100">
-                        <div className="relative h-64 bg-gray-100 overflow-hidden">
+                        <div className="relative h-48 sm:h-64 bg-gray-100 overflow-hidden">
                           <img
                             src={product.image}
                             alt={product.name}
@@ -142,16 +142,16 @@ export function Shop() {
                           </div>
                         </div>
                         <div className="p-6 flex flex-col flex-grow">
-                          <h3 className="text-xl font-bold mb-2 text-gray-900 group-hover:text-[#36AC43] transition-colors line-clamp-2">
+                          <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900 group-hover:text-[#36AC43] transition-colors line-clamp-2">
                             {product.name}
                           </h3>
                           <div className="mt-auto pt-4">
-                            <p className="text-2xl font-bold text-[#36AC43] mb-6">
+                            <p className="text-xl sm:text-2xl font-bold text-[#36AC43] mb-6">
                               KSh {product.price.toLocaleString()}.00
                             </p>
                             <button
                               onClick={() => addToCart(product.id)}
-                              className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-[#36AC43] text-white rounded-xl hover:bg-[#2d8c36] hover:shadow-lg transition-all duration-300 font-bold text-lg"
+                              className="w-full flex items-center justify-center gap-2 px-5 py-3 bg-[#36AC43] text-white rounded-xl hover:bg-[#2d8c36] hover:shadow-lg transition-all duration-300 font-bold text-base sm:text-lg"
                             >
                               <ShoppingCart className="w-5 h-5" />
                               Add to Cart
@@ -163,13 +163,13 @@ export function Shop() {
                   ))}
                 </div>
               ) : (
-                <div className="bg-white rounded-3xl shadow-md border border-gray-100 p-16 text-center">
-                  <Search className="w-16 h-16 text-gray-300 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">No products found</h3>
-                  <p className="text-gray-500 text-lg">Try adjusting your search or category filter to find what you're looking for.</p>
+                <div className="bg-white rounded-3xl shadow-md border border-gray-100 p-6 sm:p-16 text-center">
+                  <Search className="w-12 h-12 sm:w-16 sm:h-16 text-gray-300 mx-auto mb-4" />
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">No products found</h3>
+                  <p className="text-gray-500 text-sm sm:text-lg">Try adjusting your search or category filter to find what you're looking for.</p>
                   <button 
                     onClick={() => { setSearchQuery(""); setSelectedCategory("All"); }}
-                    className="mt-6 px-6 py-3 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 font-bold transition-colors"
+                    className="mt-6 px-5 py-2.5 sm:px-6 sm:py-3 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 font-bold transition-colors text-sm sm:text-base"
                   >
                     Clear Filters
                   </button>

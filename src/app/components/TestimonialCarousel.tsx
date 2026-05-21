@@ -66,48 +66,46 @@ export function TestimonialCarousel() {
   };
 
   return (
-    <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-2xl p-8 lg:p-12 overflow-hidden">
+    <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-12 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-[#36AC43]/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
       <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#36AC43]/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
 
       <div className="relative">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h3 className="text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h3>
-          <p className="text-xl text-gray-600">Trusted by businesses across East Africa</p>
+        <div className="text-center mb-8 sm:mb-12">
+          <h3 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">What Our Clients Say</h3>
+          <p className="text-base sm:text-xl text-gray-600">Trusted by businesses across East Africa</p>
         </div>
 
         {/* Testimonial Content */}
-        <div className="relative min-h-[400px] flex items-center justify-center">
+        <div className="relative flex items-center justify-center min-h-[250px]">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-all duration-500 ${
+              className={`transition-all duration-500 w-full ${
                 index === currentIndex
-                  ? "opacity-100 translate-x-0"
-                  : index < currentIndex
-                  ? "opacity-0 -translate-x-full"
-                  : "opacity-0 translate-x-full"
+                  ? "relative z-10 opacity-100 translate-x-0"
+                  : "absolute inset-0 z-0 opacity-0 pointer-events-none"
               }`}
             >
-              <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
+              <div className="flex flex-col items-center text-center max-w-4xl mx-auto px-2">
                 {/* Quote Icon */}
-                <div className="w-20 h-20 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] rounded-full flex items-center justify-center mb-8 shadow-lg">
-                  <Quote className="w-10 h-10 text-white" />
+                <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] rounded-full flex items-center justify-center mb-6 sm:mb-8 shadow-lg">
+                  <Quote className="w-6 h-6 sm:w-10 sm:h-10 text-white" />
                 </div>
 
                 {/* Testimonial Text */}
-                <p className="text-2xl text-gray-700 leading-relaxed mb-8 italic">
+                <p className="text-lg sm:text-2xl text-gray-700 leading-relaxed mb-6 sm:mb-8 italic">
                   "{testimonial.text}"
                 </p>
 
                 {/* Rating */}
-                <div className="flex gap-2 mb-6">
+                <div className="flex gap-1.5 sm:gap-2 mb-4 sm:mb-6">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <svg
                       key={i}
-                      className="w-6 h-6 text-[#36AC43]"
+                      className="w-5 h-5 sm:w-6 sm:h-6 text-[#36AC43]"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -117,16 +115,16 @@ export function TestimonialCarousel() {
                 </div>
 
                 {/* Author Info */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3 sm:gap-4">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-16 h-16 rounded-full object-cover shadow-lg"
+                    className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover shadow-lg"
                   />
                   <div className="text-left">
-                    <h4 className="text-xl font-bold text-gray-900">{testimonial.name}</h4>
-                    <p className="text-lg text-gray-600">{testimonial.role}</p>
-                    <p className="text-base text-[#36AC43] font-semibold">{testimonial.company}</p>
+                    <h4 className="text-base sm:text-xl font-bold text-gray-900">{testimonial.name}</h4>
+                    <p className="text-xs sm:text-base text-gray-600">{testimonial.role}</p>
+                    <p className="text-xs sm:text-base text-[#36AC43] font-semibold">{testimonial.company}</p>
                   </div>
                 </div>
               </div>
@@ -135,24 +133,24 @@ export function TestimonialCarousel() {
         </div>
 
         {/* Navigation Buttons */}
-        <div className="flex justify-center items-center gap-4 mt-12">
+        <div className="flex justify-center items-center gap-3 sm:gap-4 mt-8 sm:mt-12">
           <button
             onClick={goToPrev}
-            className="w-14 h-14 bg-white rounded-full shadow-lg hover:shadow-xl flex items-center justify-center text-gray-700 hover:text-[#36AC43] transition-all duration-300 transform hover:scale-110"
+            className="w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full shadow-lg hover:shadow-xl flex items-center justify-center text-gray-700 hover:text-[#36AC43] transition-all duration-300 transform hover:scale-110"
           >
-            <ChevronLeft className="w-6 h-6" />
+            <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
           </button>
 
           {/* Dots Indicator */}
-          <div className="flex gap-3">
+          <div className="flex gap-2 sm:gap-3">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={`transition-all duration-300 rounded-full ${
                   index === currentIndex
-                    ? "w-12 h-3 bg-[#36AC43]"
-                    : "w-3 h-3 bg-gray-300 hover:bg-gray-400"
+                    ? "w-8 sm:w-12 h-2.5 sm:h-3 bg-[#36AC43]"
+                    : "w-2.5 sm:w-3 h-2.5 sm:h-3 bg-gray-300 hover:bg-gray-400"
                 }`}
               />
             ))}
@@ -160,9 +158,9 @@ export function TestimonialCarousel() {
 
           <button
             onClick={goToNext}
-            className="w-14 h-14 bg-white rounded-full shadow-lg hover:shadow-xl flex items-center justify-center text-gray-700 hover:text-[#36AC43] transition-all duration-300 transform hover:scale-110"
+            className="w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full shadow-lg hover:shadow-xl flex items-center justify-center text-gray-700 hover:text-[#36AC43] transition-all duration-300 transform hover:scale-110"
           >
-            <ChevronRight className="w-6 h-6" />
+            <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
           </button>
         </div>
       </div>

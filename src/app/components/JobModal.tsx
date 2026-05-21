@@ -37,56 +37,56 @@ export function JobModal({ isOpen, onClose, job }: JobModalProps) {
 				onClick={onClose}></div>
 			<div className="relative bg-white rounded-3xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto flex flex-col animate-in zoom-in-95 duration-300">
 				{/* Header */}
-				<div className="relative bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white p-8 sm:p-10 rounded-t-3xl flex-shrink-0">
+				<div className="relative bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white p-6 sm:p-10 rounded-t-3xl flex-shrink-0 z-20">
 					<button
 						onClick={onClose}
-						className="absolute top-6 right-6 bg-white/20 hover:bg-white/30 p-2 rounded-full text-white backdrop-blur-md transition-colors">
-						<X className="w-6 h-6" />
+						className="absolute top-4 right-4 sm:top-6 sm:right-6 bg-white/20 hover:bg-white/30 p-2 rounded-full text-white backdrop-blur-md transition-colors z-30">
+						<X className="w-5 h-5 sm:w-6 sm:h-6" />
 					</button>
 
-					<h2 className="text-3xl sm:text-4xl font-bold pr-12 mb-4">
+					<h2 className="text-2xl sm:text-4xl font-bold pr-8 sm:pr-12 mb-4">
 						{job.title}
 					</h2>
 
-					<div className="flex flex-wrap gap-6 text-white/90">
+					<div className="flex flex-wrap gap-4 sm:gap-6 text-white/90 text-sm sm:text-base">
 						<div className="flex items-center gap-2">
-							<Briefcase className="w-5 h-5" />
+							<Briefcase className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
 							<span>{job.experience}</span>
 						</div>
 						<div className="flex items-center gap-2">
-							<Award className="w-5 h-5" />
+							<Award className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
 							<span>{job.education}</span>
 						</div>
 						<div className="flex items-center gap-2 bg-white/20 px-3 py-1 rounded-full font-semibold">
-							<Calendar className="w-5 h-5" />
+							<Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
 							<span>Apply by: {job.deadline}</span>
 						</div>
 					</div>
 				</div>
 
 				{/* Content */}
-				<div className="p-8 sm:p-10 flex-grow">
-					<h3 className="text-2xl font-bold mb-6 text-gray-900">
+				<div className="p-6 sm:p-10 flex-grow">
+					<h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-gray-900">
 						Job Description
 					</h3>
-					<div className="space-y-4 text-lg text-gray-700 leading-relaxed mb-10">
+					<div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-10">
 						{job.fullDescription.map((paragraph, index) => (
 							<p key={index}>{paragraph}</p>
 						))}
 					</div>
 
 					{/* Action */}
-					<div className="mt-auto pt-8 border-t border-gray-100 flex flex-wrap gap-4">
+					<div className="mt-auto pt-6 sm:pt-8 border-t border-gray-100 flex flex-col sm:flex-row gap-3 sm:gap-4">
 						<a
 							href={`mailto:hr@knightsandapps.com?subject=Application for ${encodeURIComponent(
 								job.title,
 							)}`}
-							className="px-8 py-4 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white rounded-xl hover:shadow-xl transition-all duration-300 font-bold text-lg inline-flex items-center justify-center gap-2">
+							className="w-full sm:w-auto text-center px-6 sm:px-8 py-3.5 sm:py-4 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white rounded-xl hover:shadow-xl transition-all duration-300 font-bold text-base sm:text-lg inline-flex items-center justify-center gap-2">
 							Apply via Email
 						</a>
 						<button
 							onClick={onClose}
-							className="px-8 py-4 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 transition-all duration-300 font-bold text-lg">
+							className="w-full sm:w-auto text-center px-6 sm:px-8 py-3.5 sm:py-4 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 transition-all duration-300 font-bold text-base sm:text-lg">
 							Close
 						</button>
 					</div>

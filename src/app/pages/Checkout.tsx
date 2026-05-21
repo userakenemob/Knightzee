@@ -71,8 +71,8 @@ export function Checkout() {
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Checkout Form */}
           <div className="lg:col-span-2">
-            <form onSubmit={handleSubmit} className="bg-white rounded-3xl shadow-xl p-8">
-              <h2 className="text-2xl font-bold mb-6 text-gray-900">Billing Details</h2>
+            <form onSubmit={handleSubmit} className="bg-white rounded-3xl shadow-xl p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold mb-6 text-gray-900">Billing Details</h2>
 
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div>
@@ -222,8 +222,8 @@ export function Checkout() {
 
           {/* Order Summary */}
           <div className="lg:col-span-1">
-            <div className="bg-white rounded-3xl shadow-xl p-8 sticky top-24">
-              <h2 className="text-2xl font-bold mb-6 text-gray-900">Order Summary</h2>
+            <div className="bg-white rounded-3xl shadow-xl p-6 sm:p-8 sticky top-24">
+              <h2 className="text-xl sm:text-2xl font-bold mb-6 text-gray-900">Order Summary</h2>
 
               <div className="space-y-4 mb-6">
                 {items.map((item) => (

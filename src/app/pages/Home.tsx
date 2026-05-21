@@ -152,37 +152,37 @@ export function Home() {
 		<div className="w-full">
 			{/* Hero Section */}
 			<section
-				className="relative min-h-[700px] bg-cover bg-center flex items-center"
+				className="relative min-h-[500px] sm:min-h-[700px] bg-cover bg-center flex items-center"
 				style={{
 					backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778835817/Knights-Energy-870x448-1_juo7tj.jpg')`,
 				}}>
-				<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-24 text-white w-full">
+				<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 sm:py-24 text-white w-full">
 					<div className="max-w-3xl">
 						<p
-							className="text-base font-semibold uppercase tracking-widest mb-6"
+							className="text-sm sm:text-base font-semibold uppercase tracking-widest mb-6"
 							style={{ color: "#36AC43" }}>
 							Complete Commercial, Residential & Industrial Solar Systems
 						</p>
-						<h1 className="text-5xl lg:text-6xl font-bold mb-8 leading-tight">
+						<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
 							Home of Renewable
-							<br />
+							<br className="hidden sm:inline" />
 							Energy and Electrical
-							<br />
+							<br className="hidden sm:inline" />
 							Contracting!
 						</h1>
-						<p className="text-2xl lg:text-3xl mb-12 text-gray-200 leading-relaxed">
+						<p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-12 text-gray-200 leading-relaxed">
 							All our energy is generated from renewable sources. We will help
 							you to reduce your energy consumption.
 						</p>
-						<div className="flex flex-wrap gap-6">
+						<div className="flex flex-wrap gap-4 sm:gap-6">
 							<Link
 								to="/about"
-								className="px-10 py-4 bg-[#36AC43] text-white rounded-md hover:bg-[#2d8c36] transition-all duration-300 font-semibold text-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+								className="px-6 py-3 sm:px-10 sm:py-4 bg-[#36AC43] text-white rounded-md hover:bg-[#2d8c36] transition-all duration-300 font-semibold text-base sm:text-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1">
 								More About Us
 							</Link>
 							<Link
 								to="/services"
-								className="px-10 py-4 bg-white text-gray-900 rounded-md hover:bg-gray-100 transition-all duration-300 font-semibold text-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+								className="px-6 py-3 sm:px-10 sm:py-4 bg-white text-gray-900 rounded-md hover:bg-gray-100 transition-all duration-300 font-semibold text-base sm:text-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1">
 								Our Services
 							</Link>
 						</div>
@@ -200,29 +200,29 @@ export function Home() {
 								<img
 									src="https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778835820/KNIGHTS-ENERGY-OM-570x464_n6rjgd.jpg"
 									alt="Fostering Growth"
-									className="rounded-2xl shadow-2xl w-full h-[500px] object-cover relative z-10"
+									className="rounded-2xl shadow-2xl w-full h-[300px] md:h-[500px] object-cover relative z-10"
 								/>
 								<div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#36AC43]/10 rounded-full"></div>
 							</div>
 						</AnimatedSection>
 						<AnimatedSection animation="fade-left" delay={200}>
 							<div>
-								<p className="text-base font-bold uppercase tracking-widest mb-6 text-[#36AC43]">
+								<p className="text-sm sm:text-base font-bold uppercase tracking-widest mb-6 text-[#36AC43]">
 									WELCOME TO KNIGHTS ENERGY
 								</p>
-								<h2 className="text-4xl font-bold mb-8 text-gray-900 leading-tight">
+								<h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-gray-900 leading-tight">
 									Fostering Growth
 									<br />
 									of Solar Energy!
 								</h2>
-								<p className="text-xl text-gray-600 mb-6 leading-relaxed">
+								<p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
 									We are committed to providing alternative solutions of the
 									highest standards and address the energy cost factor.
 								</p>
-								<h3 className="text-3xl font-bold mb-6 text-gray-900">
+								<h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-gray-900">
 									Sustainable, Reliable & Affordable Energy!
 								</h3>
-								<p className="text-xl text-gray-600 mb-5 leading-relaxed">
+								<p className="text-lg sm:text-xl text-gray-600 mb-5 leading-relaxed">
 									Knights Energy provides solar solutions for industrial,
 									commercial & residential applications, that enable individuals
 									& organizations to be part of a sustainable green energy
@@ -307,7 +307,7 @@ export function Home() {
 							<img
 								src="https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778835816/Knights-Energy-1241x849-4-1-670x444_ytl2rl.jpg"
 								alt="Solar Installation"
-								className="rounded-3xl shadow-2xl w-full h-[600px] object-cover relative z-10"
+								className="rounded-3xl shadow-2xl w-full h-[300px] md:h-[600px] object-cover relative z-10"
 							/>
 							<div className="absolute -bottom-8 -right-8 w-40 h-40 bg-[#36AC43]/10 rounded-full"></div>
 						</div>
@@ -435,15 +435,15 @@ export function Home() {
 								<ArrowRight className="w-6 h-6" />
 							</Link>
 						</div>
-						<div className="grid grid-cols-2 gap-6">
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 							{ecoHubItems.map((item, index) => (
 								<div
 									key={index}
-									className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-2">
-									<h3 className="text-2xl font-bold mb-4 text-white">
+									className="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-2">
+									<h3 className="text-xl sm:text-2xl font-bold mb-4 text-white">
 										{item.title}
 									</h3>
-									<p className="text-gray-300 mb-6 leading-relaxed text-lg">
+									<p className="text-gray-300 mb-6 leading-relaxed text-base sm:text-lg">
 										{item.desc}
 									</p>
 									<button
@@ -451,7 +451,7 @@ export function Home() {
 											setSelectedEcoHubItem(index);
 											setEcoHubModalOpen(true);
 										}}
-										className="text-[#36AC43] hover:text-[#2d8c36] font-semibold transition-colors text-lg">
+										className="text-[#36AC43] hover:text-[#2d8c36] font-semibold transition-colors text-base sm:text-lg">
 										Read More →
 									</button>
 								</div>
@@ -466,48 +466,48 @@ export function Home() {
 				<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
 					<div className="grid md:grid-cols-2 gap-10 items-stretch">
 						<AnimatedSection animation="fade-right">
-							<div className="bg-gradient-to-br from-[#36AC43] to-[#2d8c36] text-white p-12 lg:p-16 rounded-3xl shadow-2xl">
+							<div className="bg-gradient-to-br from-[#36AC43] to-[#2d8c36] text-white p-6 sm:p-12 lg:p-16 rounded-3xl shadow-2xl">
 								<p className="text-4xl lg:text-5xl font-bold mb-6">
 									<CountUp end={317} />
 								</p>
 								<p className="text-2xl font-semibold mb-8 leading-tight">
 									Number Of Projects In Operations Across East Africa
 								</p>
-								<p className="text-xl mb-10 text-white/90 leading-relaxed">
+								<p className="text-lg sm:text-xl mb-10 text-white/90 leading-relaxed">
 									Yet those that embrace change are thriving, building bigger,
 									better, faster, and stronger products than ever.
 								</p>
 								<div className="flex flex-wrap gap-4">
-									<button className="px-8 py-4 bg-white text-[#36AC43] rounded-md hover:bg-gray-100 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg">
+									<button className="px-6 py-3 sm:px-8 sm:py-4 bg-white text-[#36AC43] rounded-md hover:bg-gray-100 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-base sm:text-lg">
 										Download Brochures
 									</button>
-									<button className="px-8 py-4 border-2 border-white text-white rounded-md hover:bg-white hover:text-[#36AC43] font-semibold transition-all duration-300 text-lg">
+									<button className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-white text-white rounded-md hover:bg-white hover:text-[#36AC43] font-semibold transition-all duration-300 text-base sm:text-lg">
 										Request Quote
 									</button>
 								</div>
 							</div>
 						</AnimatedSection>
 						<AnimatedSection animation="fade-left" delay={200}>
-							<div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white p-12 lg:p-16 rounded-3xl shadow-2xl">
+							<div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white p-6 sm:p-12 lg:p-16 rounded-3xl shadow-2xl">
 								<p className="text-4xl lg:text-5xl font-bold mb-6">
 									<CountUp end={12} />
 								</p>
 								<p className="text-2xl font-semibold mb-8 leading-tight">
 									Years Of Experience On Renewable Energy
 								</p>
-								<p className="text-xl mb-10 text-gray-200 leading-relaxed">
+								<p className="text-lg sm:text-xl mb-10 text-gray-200 leading-relaxed">
 									We embrace change and are thriving, building better, long
 									lasting and more reliable solar solutions.
 								</p>
 								<div className="flex flex-wrap gap-4">
 									<Link
 										to="/about#team"
-										className="px-8 py-4 bg-[#36AC43] text-white rounded-md hover:bg-[#2d8c36] font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg">
+										className="px-6 py-3 sm:px-8 sm:py-4 bg-[#36AC43] text-white rounded-md hover:bg-[#2d8c36] font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-base sm:text-lg">
 										Our Leadership Team
 									</Link>
 									<Link
 										to="/about#careers"
-										className="px-8 py-4 border-2 border-white text-white rounded-md hover:bg-white hover:text-gray-900 font-semibold transition-all duration-300 text-lg">
+										className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-white text-white rounded-md hover:bg-white hover:text-gray-900 font-semibold transition-all duration-300 text-base sm:text-lg">
 										Join Our Team
 									</Link>
 								</div>
@@ -526,29 +526,29 @@ export function Home() {
 						</h2>
 					</div>
 					<div className="grid md:grid-cols-2 gap-10">
-						<div className="bg-white p-12 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
-							<h3 className="text-3xl font-bold mb-6 text-gray-900">
+						<div className="bg-white p-6 sm:p-12 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+							<h3 className="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">
 								Design & Shipping
 							</h3>
-							<p className="text-xl text-gray-600 mb-8 leading-relaxed">
+							<p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
 								We strive to produce unique designs, give the best solutions
 								that match your needs and select the appropriate equipment at
 								the appropriate moment.
 							</p>
-							<button className="px-10 py-4 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white rounded-xl hover:shadow-2xl transition-all duration-300 font-bold text-xl transform hover:-translate-y-1">
+							<button className="px-8 py-3 sm:px-10 sm:py-4 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white rounded-xl hover:shadow-2xl transition-all duration-300 font-bold text-lg sm:text-xl transform hover:-translate-y-1">
 								Schedule A Visit
 							</button>
 						</div>
-						<div className="bg-white p-12 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
-							<h3 className="text-3xl font-bold mb-6 text-gray-900">
+						<div className="bg-white p-6 sm:p-12 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+							<h3 className="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">
 								Contract & Install
 							</h3>
-							<p className="text-xl text-gray-600 mb-8 leading-relaxed">
+							<p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
 								If you choose self-installation, our organization will provide
 								you with competitive and adaptable contracts to fit your
 								management requirements.
 							</p>
-							<button className="px-10 py-4 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white rounded-xl hover:shadow-2xl transition-all duration-300 font-bold text-xl transform hover:-translate-y-1">
+							<button className="px-8 py-3 sm:px-10 sm:py-4 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white rounded-xl hover:shadow-2xl transition-all duration-300 font-bold text-lg sm:text-xl transform hover:-translate-y-1">
 								Request A Quote
 							</button>
 						</div>
@@ -561,14 +561,14 @@ export function Home() {
 				<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
 					<div className="grid lg:grid-cols-2 gap-12 items-start">
 						{/* Left Side - CTA Content */}
-						<div className="bg-gradient-to-br from-[#36AC43] to-[#2d8c36] text-white p-12 lg:p-16 rounded-3xl shadow-2xl">
-							<h2 className="text-5xl font-bold mb-8 leading-tight">
+						<div className="bg-gradient-to-br from-[#36AC43] to-[#2d8c36] text-white p-6 sm:p-12 lg:p-16 rounded-3xl shadow-2xl">
+							<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 leading-tight">
 								Save Money, Save The Environment!
 							</h2>
-							<p className="text-3xl mb-8 font-semibold">
+							<p className="text-2xl sm:text-3xl mb-8 font-semibold">
 								Let's Build a Greener Eco-friendly Environment
 							</p>
-							<p className="mb-10 text-xl leading-relaxed">
+							<p className="mb-10 text-lg sm:text-xl leading-relaxed">
 								Our Solar business now provides the preferred channel to market
 								for some of the world's leading PV manufacturers and our solar
 								professionals work jointly with partners on enhancing product
@@ -576,29 +576,29 @@ export function Home() {
 							</p>
 							<div className="space-y-6">
 								<div className="flex items-center gap-4">
-									<CheckCircle2 className="w-8 h-8 text-white flex-shrink-0" />
-									<p className="text-xl">
+									<CheckCircle2 className="w-6 h-6 sm:w-8 sm:h-8 text-white flex-shrink-0" />
+									<p className="text-lg sm:text-xl">
 										Reduce your energy bills by up to 80%
 									</p>
 								</div>
 								<div className="flex items-center gap-4">
-									<CheckCircle2 className="w-8 h-8 text-white flex-shrink-0" />
-									<p className="text-xl">
+									<CheckCircle2 className="w-6 h-6 sm:w-8 sm:h-8 text-white flex-shrink-0" />
+									<p className="text-lg sm:text-xl">
 										Environmentally friendly & sustainable
 									</p>
 								</div>
 								<div className="flex items-center gap-4">
-									<CheckCircle2 className="w-8 h-8 text-white flex-shrink-0" />
-									<p className="text-xl">12+ years of proven expertise</p>
+									<CheckCircle2 className="w-6 h-6 sm:w-8 sm:h-8 text-white flex-shrink-0" />
+									<p className="text-lg sm:text-xl">12+ years of proven expertise</p>
 								</div>
 								<div className="flex items-center gap-4">
-									<CheckCircle2 className="w-8 h-8 text-white flex-shrink-0" />
-									<p className="text-xl">World-class installation & support</p>
+									<CheckCircle2 className="w-6 h-6 sm:w-8 sm:h-8 text-white flex-shrink-0" />
+									<p className="text-lg sm:text-xl">World-class installation & support</p>
 								</div>
 							</div>
 							<Link
 								to="/services"
-								className="inline-flex items-center gap-3 px-12 py-5 bg-white text-[#36AC43] rounded-xl hover:bg-gray-100 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 font-bold text-xl mt-10">
+								className="inline-flex items-center gap-3 px-8 py-4 sm:px-12 sm:py-5 bg-white text-[#36AC43] rounded-xl hover:bg-gray-100 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 font-bold text-lg sm:text-xl mt-10">
 								Explore Our Plans
 								<ArrowRight className="w-6 h-6" />
 							</Link>
