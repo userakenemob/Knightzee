@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { AnimatedSection } from "../components/AnimatedSection";
 import { JobModal, JobData } from "../components/JobModal";
+import { TeamCarousel } from "../components/TeamCarousel";
 import { useState } from "react";
 import { Calendar } from "lucide-react";
 
@@ -248,28 +249,9 @@ export function About() {
 							Meet the experts driving our vision forward
 						</p>
 					</div>
-					<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
-						{[1, 2, 3, 4, 5, 6].map((_, index) => (
-							<AnimatedSection
-								key={index}
-								animation="zoom-in"
-								delay={index * 100}>
-								<div className="bg-white p-6 sm:p-8 rounded-3xl shadow-xl text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-									<div className="w-32 h-32 sm:w-40 sm:h-40 bg-gradient-to-br from-[#36AC43] to-[#2d8c36] rounded-full mx-auto mb-6"></div>
-									<h3 className="text-xl sm:text-3xl font-bold mb-3 text-gray-900">
-										Team Member {index + 1}
-									</h3>
-									<p className="text-[#36AC43] mb-4 font-semibold text-lg sm:text-xl">
-										Position Title
-									</p>
-									<p className="text-gray-600 text-base sm:text-lg lg:text-xl leading-relaxed">
-										Expert in renewable energy solutions with extensive
-										experience in the field.
-									</p>
-								</div>
-							</AnimatedSection>
-						))}
-					</div>
+					<AnimatedSection animation="fade-up">
+						<TeamCarousel />
+					</AnimatedSection>
 				</div>
 			</section>
 

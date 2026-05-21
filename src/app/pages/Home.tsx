@@ -9,6 +9,7 @@ import { TestimonialCarousel } from "../components/TestimonialCarousel";
 import { SolarCalculator } from "../components/SolarCalculator";
 import { FAQAccordion } from "../components/FAQAccordion";
 import { QuoteForm } from "../components/QuoteForm";
+import { PartnersCarousel } from "../components/PartnersCarousel";
 
 export function Home() {
 	const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -53,14 +54,6 @@ export function Home() {
 			image:
 				"https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778835822/KNIGTHS-ENERGY-BAT-Thika_hudfeq.jpg",
 		},
-	];
-
-	const partners = [
-		"Molo Rivers Roses",
-		"Missionary Benedictines sisters",
-		"MEGA PACK",
-		"KLM AIR FRANCE",
-		"KICC",
 	];
 
 	const ecoHubItems = [
@@ -651,22 +644,11 @@ export function Home() {
 			<section className="py-24 bg-gray-50">
 				<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
 					<AnimatedSection animation="fade-up">
-						<h2 className="text-4xl font-bold mb-16 text-center text-gray-900">
-							Trusted by Leading Organizations
+						<h2 className="text-2xl sm:text-4xl font-bold mb-16 text-center text-gray-900">
+							Our Trusted Partners
 						</h2>
+						<PartnersCarousel />
 					</AnimatedSection>
-					<div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
-						{partners.map((partner, index) => (
-							<AnimatedSection
-								key={index}
-								animation="zoom-in"
-								delay={index * 100}>
-								<div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
-									<p className="text-gray-700 font-bold text-lg">{partner}</p>
-								</div>
-							</AnimatedSection>
-						))}
-					</div>
 				</div>
 			</section>
 

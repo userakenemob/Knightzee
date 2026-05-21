@@ -12,3 +12,23 @@
 .partners-carousel .slick-list {
   overflow: hidden;
 }
+
+.team-carousel .slick-slide {
+  padding: 0 12px;
+}
+
+.team-carousel .slick-dots li button:before {
+  font-size: 10px;
+  color: #36AC43 !important;
+  opacity: 0.25;
+}
+
+.team-carousel .slick-dots li.slick-active button:before {
+  opacity: 0.9;
+  color: #36AC43 !important;
+}
+
+.team-carousel .slick-dots {
+  bottom: -20px;
+}
+
