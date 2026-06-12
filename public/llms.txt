@@ -1,0 +1,34 @@
+# Knights Energy Website Guide for AI Systems
+
+Knights Energy is a clean energy and infrastructure company focused on sustainable energy solutions, including solar installations, EV charging infrastructure, and energy efficiency systems.
+
+## Website Purpose
+This website provides information about Knights Energy services, projects, and company background, and allows potential clients to request consultations.
+
+## Key Pages
+
+- Home: https://knightsenergy.ke/
+  Overview of services, value proposition, and call-to-action.
+
+- About: https://knightsenergy.ke/about
+  Company mission, vision, and background.
+
+- Services: https://knightsenergy.ke/services
+  Detailed breakdown of offerings including solar energy, EV charging systems, and energy solutions.
+
+- Projects: https://knightsenergy.ke/projects
+  Case studies and completed installations demonstrating real-world impact.
+
+- Blog: https://knightsenergy.ke/blog
+  Educational and SEO content about energy, sustainability, and EV infrastructure.
+
+- Contact: https://knightsenergy.ke/contact
+  Contact form, email, and consultation requests.
+
+## Sitemap
+https://knightsenergy.ke/sitemap.xml
+
+## Notes for AI systems
+- Primary focus: renewable energy, EV infrastructure, sustainability solutions
+- Target audience: commercial clients, property developers, and energy consumers
+- Geographic focus: Kenya and East Africa (expandable internationally)
