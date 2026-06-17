@@ -76,7 +76,7 @@ export function Services() {
 			description:
 				"Our Solar Water Pumping System/Waterbox is specially designed for water supply in agricultural, residential, and commercial applications. These systems are reliable, cost-effective, and require minimal maintenance.",
 			image:
-				"https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1778835829/KNIGTHS-ENERGY-WATER-PUMPING-2-570x464_k1mgmq.jpg",
+				"https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1781702967/solar-water-pumping-system_bxjme5.jpg",
 		},
 		{
 			id: "maintenance",
@@ -187,38 +187,6 @@ export function Services() {
 				</div>
 			</section>
 
-			{/* Testimonials */}
-			<section className="py-12 sm:py-24 bg-gradient-to-br from-gray-900 to-gray-800">
-				<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-					<h2 className="text-2xl sm:text-4xl font-bold mb-10 sm:mb-16 text-center text-white">
-						What our clients have to say!
-					</h2>
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-10">
-						{[1, 2, 3].map((index) => (
-							<div
-								key={index}
-								className="bg-white/10 backdrop-blur-sm p-6 sm:p-10 rounded-3xl shadow-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-2">
-								<div className="flex items-center mb-6">
-									<div className="text-[#36AC43] text-3xl">★★★★★</div>
-								</div>
-								<p className="text-white text-base sm:text-lg md:text-xl mb-8 leading-relaxed">
-									"Knights Energy delivered an exceptional solar solution for
-									our facility. The team was professional, and the installation
-									exceeded our expectations."
-								</p>
-								<div className="flex items-center">
-									<div className="w-16 h-16 bg-gradient-to-br from-[#36AC43] to-[#2d8c36] rounded-full mr-4"></div>
-									<div>
-										<p className="font-bold text-white text-lg sm:text-xl">Client Name</p>
-										<p className="text-gray-300 text-sm sm:text-base">Company Name</p>
-									</div>
-								</div>
-							</div>
-						))}
-					</div>
-				</div>
-			</section>
-
 			{/* Quote Form */}
 			<section className="py-12 sm:py-16 bg-white">
 				<div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -237,7 +205,7 @@ export function Services() {
 					<QuoteForm />
 				</div>
 			</section>
-			
+
 			<ServiceModal
 				isOpen={isModalOpen}
 				onClose={() => setIsModalOpen(false)}

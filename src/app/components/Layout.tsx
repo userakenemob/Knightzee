@@ -3,6 +3,7 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { ScrollToTop } from "./ScrollToTop";
 import { WhatsAppButton } from "./WhatsAppButton";
+import { FloatingAppDownload } from "./FloatingAppDownload";
 import { ScrollProgress } from "./ScrollProgress";
 import { useEffect } from "react";
 
@@ -35,6 +36,7 @@ export function Layout() {
       </main>
       <Footer />
       <ScrollToTop />
+      <FloatingAppDownload />
       <WhatsAppButton />
     </div>
   );

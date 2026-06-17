@@ -10,6 +10,7 @@ import { SolarCalculator } from "../components/SolarCalculator";
 import { FAQAccordion } from "../components/FAQAccordion";
 import { QuoteForm } from "../components/QuoteForm";
 import { PartnersCarousel } from "../components/PartnersCarousel";
+import { toast } from "sonner";
 
 export function Home() {
 	const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -337,7 +338,13 @@ export function Home() {
 								key={index}
 								animation="fade-up"
 								delay={index * 100}>
-								<div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+								<div 
+									onClick={() => {
+										document.getElementById("quote-section")?.scrollIntoView({ behavior: "smooth" });
+										toast.success(`Selected: ${service.title}. Let's request a quote!`);
+									}}
+									className="cursor-pointer bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
+								>
 									<div className="w-16 h-16 bg-gradient-to-br from-[#36AC43] to-[#2d8c36] rounded-xl mb-6 flex items-center justify-center text-white text-2xl font-bold shadow-md group-hover:shadow-lg transition-shadow">
 										{index + 1}
 									</div>
@@ -471,10 +478,16 @@ export function Home() {
 									better, faster, and stronger products than ever.
 								</p>
 								<div className="flex flex-wrap gap-4">
-									<button className="px-6 py-3 sm:px-8 sm:py-4 bg-white text-[#36AC43] rounded-md hover:bg-gray-100 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-base sm:text-lg">
+									<button 
+										onClick={() => toast.success("Knights Energy Brochure download started!")}
+										className="px-6 py-3 sm:px-8 sm:py-4 bg-white text-[#36AC43] rounded-md hover:bg-gray-100 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-base sm:text-lg"
+									>
 										Download Brochures
 									</button>
-									<button className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-white text-white rounded-md hover:bg-white hover:text-[#36AC43] font-semibold transition-all duration-300 text-base sm:text-lg">
+									<button 
+										onClick={() => document.getElementById("quote-section")?.scrollIntoView({ behavior: "smooth" })}
+										className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-white text-white rounded-md hover:bg-white hover:text-[#36AC43] font-semibold transition-all duration-300 text-base sm:text-lg"
+									>
 										Request Quote
 									</button>
 								</div>
@@ -528,7 +541,13 @@ export function Home() {
 								that match your needs and select the appropriate equipment at
 								the appropriate moment.
 							</p>
-							<button className="px-8 py-3 sm:px-10 sm:py-4 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white rounded-xl hover:shadow-2xl transition-all duration-300 font-bold text-lg sm:text-xl transform hover:-translate-y-1">
+							<button 
+								onClick={() => {
+									document.getElementById("quote-section")?.scrollIntoView({ behavior: "smooth" });
+									toast.info("Please fill out the form below to schedule your site visit!");
+								}}
+								className="px-8 py-3 sm:px-10 sm:py-4 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white rounded-xl hover:shadow-2xl transition-all duration-300 font-bold text-lg sm:text-xl transform hover:-translate-y-1"
+							>
 								Schedule A Visit
 							</button>
 						</div>
@@ -541,7 +560,10 @@ export function Home() {
 								you with competitive and adaptable contracts to fit your
 								management requirements.
 							</p>
-							<button className="px-8 py-3 sm:px-10 sm:py-4 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white rounded-xl hover:shadow-2xl transition-all duration-300 font-bold text-lg sm:text-xl transform hover:-translate-y-1">
+							<button 
+								onClick={() => document.getElementById("quote-section")?.scrollIntoView({ behavior: "smooth" })}
+								className="px-8 py-3 sm:px-10 sm:py-4 bg-gradient-to-r from-[#36AC43] to-[#2d8c36] text-white rounded-xl hover:shadow-2xl transition-all duration-300 font-bold text-lg sm:text-xl transform hover:-translate-y-1"
+							>
 								Request A Quote
 							</button>
 						</div>
@@ -550,7 +572,7 @@ export function Home() {
 			</section>
 
 			{/* CTA & Quote Form Combined Section */}
-			<section className="py-24 bg-gradient-to-br from-gray-50 to-white">
+			<section id="quote-section" className="py-24 bg-gradient-to-br from-gray-50 to-white">
 				<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
 					<div className="grid lg:grid-cols-2 gap-12 items-start">
 						{/* Left Side - CTA Content */}

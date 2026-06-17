@@ -18,7 +18,7 @@ export function TeamCarousel() {
     {
       name: "Francis Romano",
       role: "MD & CEO of Knights Energy",
-      image: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1779355446/Remove_the_circle_on_the_202605211220_txyrek.jpg",
+      image: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1781701947/romano_dcsf1a.png",
       description: "Over 15 years of pioneering leadership in renewable energy, driving the region's transition to clean power solutions.",
       linkedin: "https://www.linkedin.com/in/francis-romano-763683248/",
       email: "mailto:romano@knightsandapps.com",
@@ -26,42 +26,26 @@ export function TeamCarousel() {
     {
       name: "June Moraa",
       role: "COO",
-      image: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1779355773/1712713886662_rf4fst.jpg",
+      image: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1781701948/june_nubhar.png",
       description: "Expert in operations management and scaling sustainable business processes with a focus on project execution and service delivery.",
       linkedin: "https://www.linkedin.com/in/june-nyandwaki-890bb0212/",
       email: "mailto:hse@knightsandapps.com",
     },
     {
-      name: "David Mwangi",
-      role: "Head of Solar Engineering",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&h=400&fit=crop",
-      description: "Leading our engineering teams to design and implement highly efficient commercial, industrial, and institutional solar systems.",
-      linkedin: "#",
-      email: "mailto:david@knightsenergy.co.ke",
+      name: "Nasieku Seur",
+      role: "O&M Manager",
+      image: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1781702339/Seur_idn12z.png",
+      description: "Solar operations specialist overseeing plant performance, preventive maintenance, and asset management across renewable energy projects.",
+      linkedin: "https://www.linkedin.com/in/nasiekuseur/",
+      email: "mailto:monitoring@knightsandapps.com",
     },
     {
-      name: "Sarah Wambui",
-      role: "Chief Financial Officer (CFO)",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&h=400&fit=crop",
-      description: "Financial strategist specializing in clean-tech investments, power purchase agreements (PPAs), and regional financial operations.",
-      linkedin: "#",
-      email: "mailto:sarah@knightsenergy.co.ke",
-    },
-    {
-      name: "John Ochieng",
-      role: "Head of Electric Mobility",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&h=400&fit=crop",
-      description: "Driving our EV integration initiative, designing charging infrastructure ecosystems, and spearheading electric fleet transitions.",
-      linkedin: "#",
-      email: "mailto:john@knightsenergy.co.ke",
-    },
-    {
-      name: "Amina Yusuf",
-      role: "Head of Customer Success",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&h=400&fit=crop",
+      name: "Mutethia Kigea",
+      role: "Analytics Engineer",
+      image: "https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1781701949/kigea_a2dlqt.png",
       description: "Committed to delivering outstanding client support, system performance monitoring, and ensuring long-term environmental impact.",
-      linkedin: "#",
-      email: "mailto:amina@knightsenergy.co.ke",
+      linkedin: "https://www.linkedin.com/in/mutethia-kigea-7ab888219/",
+      email: "mailto:iot@knightsandapps.com",
     },
   ];
 
@@ -205,7 +189,7 @@ export function TeamCarousel() {
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
                   {selectedMember.name}
                 </h2>
-                
+
                 {/* Visual Accent bar */}
                 <div className="w-12 h-1 bg-[#36AC43] rounded-full mb-6" />
 
@@ -213,7 +197,7 @@ export function TeamCarousel() {
                 <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
                   {selectedMember.description} Knights Energy relies on key visionaries to pioneer clean tech initiatives, and this leader stands at the forefront of East Africa's sustainable evolution. With specialized expertise and active project management, they ensure long-term efficiency, robust performance, and regional excellence.
                 </p>
-                
+
                 {/* Highlights list to add visual richness */}
                 <div className="mb-6">
                   <h4 className="text-gray-900 font-bold mb-2">Core Leadership Pillars</h4>

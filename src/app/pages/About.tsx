@@ -93,7 +93,7 @@ export function About() {
 			<section
 				className="relative min-h-[300px] md:min-h-[500px] bg-cover bg-center flex items-center"
 				style={{
-					backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1726221062299-88f27b653c59?w=1600')`,
+					backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/dfrbkwdzf/image/upload/q_auto/f_auto/v1779097988/KNIGHTS-ENERGY-ELLYS-6_ar2c1e.jpg')`,
 				}}>
 				<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-white w-full text-center py-16 sm:py-28">
 					<h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-6">
@@ -301,7 +301,7 @@ export function About() {
 						{jobs.map((job, index) => (
 							<div key={index} className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col h-full text-left">
 								<h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">{job.title}</h3>
-								
+
 								<div className="space-y-3 mb-6">
 									<div className="flex items-start gap-3">
 										<Briefcase className="w-5 h-5 text-[#36AC43] flex-shrink-0 mt-0.5" />
@@ -316,11 +316,11 @@ export function About() {
 										<span className="text-sm sm:text-base font-semibold text-[#36AC43]">Apply by: {job.deadline}</span>
 									</div>
 								</div>
-								
+
 								<p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-8 flex-grow">
 									{job.description}
 								</p>
-								
+
 								<button
 									onClick={() => handleReadMoreJob(job)}
 									className="mt-auto block w-full text-center px-4 py-3 sm:px-6 sm:py-4 border-2 border-[#36AC43] text-[#36AC43] rounded-xl hover:bg-[#36AC43] hover:text-white font-bold text-base sm:text-lg transition-all duration-300"

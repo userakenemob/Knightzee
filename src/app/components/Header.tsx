@@ -150,11 +150,10 @@ export function Header() {
 							<nav className="hidden lg:flex items-center gap-10">
 								<Link
 									to="/"
-									className={`relative text-gray-700 hover:text-[#36AC43] transition-colors font-medium text-base pb-1 ${
-										isActive("/") && location.pathname === "/"
-											? "text-[#36AC43]"
-											: ""
-									}`}>
+									className={`relative text-gray-700 hover:text-[#36AC43] transition-colors font-medium text-base pb-1 ${isActive("/") && location.pathname === "/"
+										? "text-[#36AC43]"
+										: ""
+										}`}>
 									Home
 									{isActive("/") && location.pathname === "/" && (
 										<span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#36AC43]"></span>
@@ -167,9 +166,8 @@ export function Header() {
 									onMouseLeave={() => setActiveMenu(null)}>
 									<Link
 										to="/about"
-										className={`relative text-gray-700 hover:text-[#36AC43] transition-colors font-medium text-base pb-1 ${
-											isActive("/about") ? "text-[#36AC43]" : ""
-										}`}>
+										className={`relative text-gray-700 hover:text-[#36AC43] transition-colors font-medium text-base pb-1 ${isActive("/about") ? "text-[#36AC43]" : ""
+											}`}>
 										About Us
 										{isActive("/about") && (
 											<span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#36AC43]"></span>
@@ -219,9 +217,8 @@ export function Header() {
 									onMouseLeave={() => setActiveMenu(null)}>
 									<Link
 										to="/services"
-										className={`relative text-gray-700 hover:text-[#36AC43] transition-colors font-medium text-base pb-1 ${
-											isActive("/services") ? "text-[#36AC43]" : ""
-										}`}>
+										className={`relative text-gray-700 hover:text-[#36AC43] transition-colors font-medium text-base pb-1 ${isActive("/services") ? "text-[#36AC43]" : ""
+											}`}>
 										Services
 										{isActive("/services") && (
 											<span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#36AC43]"></span>
@@ -273,9 +270,8 @@ export function Header() {
 
 								<Link
 									to="/projects"
-									className={`relative text-gray-700 hover:text-[#36AC43] transition-colors font-medium text-base pb-1 ${
-										isActive("/projects") ? "text-[#36AC43]" : ""
-									}`}>
+									className={`relative text-gray-700 hover:text-[#36AC43] transition-colors font-medium text-base pb-1 ${isActive("/projects") ? "text-[#36AC43]" : ""
+										}`}>
 									Projects
 									{isActive("/projects") && (
 										<span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#36AC43]"></span>
@@ -288,9 +284,8 @@ export function Header() {
 									onMouseLeave={() => setActiveMenu(null)}>
 									<Link
 										to="/media"
-										className={`relative text-gray-700 hover:text-[#36AC43] transition-colors font-medium text-base pb-1 ${
-											isActive("/media") ? "text-[#36AC43]" : ""
-										}`}>
+										className={`relative text-gray-700 hover:text-[#36AC43] transition-colors font-medium text-base pb-1 ${isActive("/media") ? "text-[#36AC43]" : ""
+											}`}>
 										Media
 										{isActive("/media") && (
 											<span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#36AC43]"></span>
@@ -318,9 +313,8 @@ export function Header() {
 
 								<Link
 									to="/shop"
-									className={`relative text-gray-700 hover:text-[#36AC43] transition-colors font-medium text-base pb-1 ${
-										isActive("/shop") ? "text-[#36AC43]" : ""
-									}`}>
+									className={`relative text-gray-700 hover:text-[#36AC43] transition-colors font-medium text-base pb-1 ${isActive("/shop") ? "text-[#36AC43]" : ""
+										}`}>
 									Shop
 									{isActive("/shop") && (
 										<span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#36AC43]"></span>
@@ -329,9 +323,8 @@ export function Header() {
 
 								<Link
 									to="/contact"
-									className={`relative text-gray-700 hover:text-[#36AC43] transition-colors font-medium text-base pb-1 ${
-										isActive("/contact") ? "text-[#36AC43]" : ""
-									}`}>
+									className={`relative text-gray-700 hover:text-[#36AC43] transition-colors font-medium text-base pb-1 ${isActive("/contact") ? "text-[#36AC43]" : ""
+										}`}>
 									Contact Us
 									{isActive("/contact") && (
 										<span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#36AC43]"></span>
@@ -342,10 +335,10 @@ export function Header() {
 							{/* Right Side Actions */}
 							<div className="flex items-center gap-6">
 								<a
-									href="tel:+254788220607"
+									href="tel:+254722953976"
 									className="hidden md:flex items-center gap-2 text-gray-700 hover:text-[#36AC43] transition-colors font-semibold">
 									<Phone className="w-5 h-5" />
-									<span>+254 788220607</span>
+									<span>+254 722 953976</span>
 								</a>
 								<button
 									onClick={() => setCartDrawerOpen(true)}

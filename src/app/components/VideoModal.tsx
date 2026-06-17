@@ -7,7 +7,7 @@ interface VideoModalProps {
   videoUrl?: string;
 }
 
-export function VideoModal({ isOpen, onClose, videoUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ" }: VideoModalProps) {
+export function VideoModal({ isOpen, onClose, videoUrl = "https://www.youtube.com/embed/jgESvR-5ZbM" }: VideoModalProps) {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";

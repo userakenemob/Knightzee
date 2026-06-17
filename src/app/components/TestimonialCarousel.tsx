@@ -3,34 +3,30 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Kamau",
+    name: "",
     company: "Molo Rivers Roses",
     role: "Operations Director",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400",
     text: "Knights Energy transformed our energy costs. The 450kW solar installation has reduced our electricity bills by 75%. Their professional team handled everything from design to commissioning flawlessly.",
     rating: 5
   },
   {
-    name: "David Omondi",
+    name: "",
     company: "Standard Chartered Bank",
     role: "Facilities Manager",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400",
     text: "Outstanding service from start to finish. The solar system at our headquarters has been performing exceptionally well. We're impressed by their technical expertise and ongoing support.",
     rating: 5
   },
   {
-    name: "Grace Wanjiru",
+    name: "",
     company: "IBER Africa",
     role: "Sustainability Officer",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400",
     text: "The 575kW installation exceeded our expectations. Knights Energy delivered on time, within budget, and their system is generating even more power than projected. Highly recommend!",
     rating: 5
   },
   {
-    name: "James Mutua",
+    name: "",
     company: "Daughters of Charity",
     role: "Administrator",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400",
     text: "We've been running on solar for two years now and couldn't be happier. The savings allow us to invest more in our mission. Knights Energy's maintenance service keeps everything running perfectly.",
     rating: 5
   }
@@ -83,11 +79,10 @@ export function TestimonialCarousel() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className={`transition-all duration-500 w-full ${
-                index === currentIndex
-                  ? "relative z-10 opacity-100 translate-x-0"
-                  : "absolute inset-0 z-0 opacity-0 pointer-events-none"
-              }`}
+              className={`transition-all duration-500 w-full ${index === currentIndex
+                ? "relative z-10 opacity-100 translate-x-0"
+                : "absolute inset-0 z-0 opacity-0 pointer-events-none"
+                }`}
             >
               <div className="flex flex-col items-center text-center max-w-4xl mx-auto px-2">
                 {/* Quote Icon */}
@@ -116,11 +111,6 @@ export function TestimonialCarousel() {
 
                 {/* Author Info */}
                 <div className="flex items-center gap-3 sm:gap-4">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover shadow-lg"
-                  />
                   <div className="text-left">
                     <h4 className="text-base sm:text-xl font-bold text-gray-900">{testimonial.name}</h4>
                     <p className="text-xs sm:text-base text-gray-600">{testimonial.role}</p>
@@ -147,11 +137,10 @@ export function TestimonialCarousel() {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`transition-all duration-300 rounded-full ${
-                  index === currentIndex
-                    ? "w-8 sm:w-12 h-2.5 sm:h-3 bg-[#36AC43]"
-                    : "w-2.5 sm:w-3 h-2.5 sm:h-3 bg-gray-300 hover:bg-gray-400"
-                }`}
+                className={`transition-all duration-300 rounded-full ${index === currentIndex
+                  ? "w-8 sm:w-12 h-2.5 sm:h-3 bg-[#36AC43]"
+                  : "w-2.5 sm:w-3 h-2.5 sm:h-3 bg-gray-300 hover:bg-gray-400"
+                  }`}
               />
             ))}
           </div>
